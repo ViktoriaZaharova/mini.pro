@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>mini.pro - Стрижка собак и кошек</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-md-4 header-box__wrapper d-flex align-items-start justify-content-between">
+                <div class="header-box">
+                    <div class="city-wrapper dropdown">
+                        <div class="dropdown-toggle city-active" data-toggle="dropdown" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                            <div class="icon"><img src="img/loc.svg" alt=""></div>
+                            <div class="text">Москва</div>
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Москва</a>
+                            <a class="dropdown-item" href="#">Королев</a>
+                            <a class="dropdown-item" href="#">Солнечногорск</a>
+                        </div>
+                    </div>
+
+                    <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+
+                    <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ
+                    </button>
+                </div>
+
+                <nav class="navbar navbar-active__menu">
+                    <ul class="nav nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link active">Услуги </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Салоны <span class="quantity">10</span> </a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Акции </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-12 col-md-4 header-logo">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+                    <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO
+Проект Алексея архипова</span>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="header-box">
+                    <nav class="navbar navbar-main__menu">
+                        <ul class="nav menu">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">О нас </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">О компании
+                                                                      MINI.PRO</a>
+                                    <a class="dropdown-item" href="#">Вакансии</a>
+                                    <a class="dropdown-item" href="#">Контакты</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="list-social">
+                        <li><a href="#"><img src="img/social/vk.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main-salon master-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title">Мастер Мария</h1>
+
+            </div>
+            <div class="col-12 info-master">
+                <div class="photo"><img src="img/photo10.png" alt=""></div>
+
+                <div class="info-master__box">
+                    <p>Салон: <a href="#" class="links">MINI.PRO Алтуфьево</a></p>
+
+                    <div class="button-group">
+                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                            <span class="text">Онлайн-Запись к мастеру</span>
+                        </button>
+
+                        <a href="tel:+79995558899" class="btn btn-black">
+                            <span class="icon"><img src="img/mobile.svg" alt=""></span><span class="text">+7 999 555 88 99</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <blockquote>
+                    <p>Сочетающая стандарт породы и практичность в уходе Идеально подходит для большинства собак.</p>
+
+                    <p>Идеально подходит собак и владельцев с динамичным образом жизни, не имеющим достаточного времени для
+                    ежедневного ухода ПРАКТИЧНАЯ СТРИЖКА сочетает стандарт породы и практичность в уходе, 70%
+                    выполняется машинкой/практичная стрижка.
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="lookbook examples-work">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 lookbook-wrapper">
+                <div class="lookbook-item">
+                    <div class="box-title">
+                        <h2>Примеры
+                            работ</h2>
+                        <a href="#" class="links"><span class="text">Смотреть все работы</span><span class="icon"><img
+                              src="img/arrow-right2.png" alt=""></span></a>
+                    </div>
+
+                </div>
+                <div class="lookbook-content">
+                    <div class="form-search__wrapper">
+                        <h4>Выберите породу: </h4>
+                        <form method="post" class="form-search">
+                            <label><input type="text" placeholder="Например: йоркширский терьер..." name="search">
+                                <span class="btn-reset">+</span>
+                            </label>
+
+                            <div class="form-result">
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер черный</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер шоколадный</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер золотой</span>
+                                </a>
+                            </div>
+
+                            <ul class="hashtag-list">
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Йорк</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Шпиц</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Пудель</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Кошка</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                    <div class="examples-work__wrapper">
+                        <div class="examples-work__box">
+                            <button type="button" class="btn btn-white" data-toggle="modal" data-target="#modalExample">
+                                +
+                            </button>
+                            <div class="image"><img src="img/photo1.jpg" alt=""></div>
+
+                            <a href="#" class="btn-play"><img src="img/play.png" alt=""></a>
+                        </div>
+
+                        <div class="examples-work__box">
+                            <button type="button" class="btn btn-white" data-toggle="modal" data-target="#modalExample">
+                                +
+                            </button>
+                            <div class="image"><img src="img/photo14.jpg" alt=""></div>
+                        </div>
+
+                        <div class="examples-work__box">
+                            <button type="button" class="btn btn-white" data-toggle="modal" data-target="#modalExample">
+                                +
+                            </button>
+                            <div class="image"><img src="img/photo15.jpg" alt=""></div>
+                        </div>
+
+                        <div class="examples-work__box examples-work__box-link">
+                            <a href="#" class="links">
+                                Еще работы
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="record-service">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Запишите вашего питомца</h2>
+
+                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+
+                <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                    ОНЛАЙН-ЗАПИСЬ
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-social">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h2>Будьте в курсе</h2>
+                <ul class="list-social">
+                    <li><a href="#"><img src="img/social/vk.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/social/youtube.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4 d-flex align-items-center">
+                <img src="img/mobile-img.png" alt="" class="img-phone">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+                    <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO</span>
+                </a>
+
+                <div class="logo-desc">Проект
+                                       Алексея
+                                       архипова
+                </div>
+            </div>
+
+            <div class="col-12 col-md-10 d-none d-md-flex justify-content-between">
+
+                <div class="footer-box">
+                    <ul class="footer-menu">
+                        <li><a href="#">о MINI.PRO</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+
+                    <ul class="footer-menu">
+                        <li><a href="#">Груминг салоны
+                                        MINI.PRO</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Салоны</a></li>
+                        <li><a href="#">LOOKBOOK</a></li>
+                    </ul>
+
+                    <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ
+                    </button>
+                </div>
+
+                <div class="footer-box">
+                    <ul class="footer-menu">
+                        <li><a href="#">Бутик MINI.PRO</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <ul class="footer-menu">
+                        <li><a href="#">Школа груминга</a></li>
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <ul class="footer-menu">
+                        <li><a href="#">Франшиза</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="copyright">Стрижка кошек и собак в Москве <a href="tel:+79995558877" class="phone">+7 999
+                                                                                                               555 88
+                                                                                                               77</a> <a
+                      href="#" class="links">Политика конфиденциальности</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="btn-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11">
+        <path fill="#FFF" fill-rule="evenodd" d="M5.995-.009L-.008 10.99h12.005L5.995-.009z"/>
+    </svg>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade modal-callback" id="modalCallback" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <h4>Подтверждение</h4>
+
+                <div class="instruction">
+                    <p>Введите свое имя и номер мобильного телефона, на который Вам придет код подтверждения.</p>
+
+                    <p>По номеру телефона мы проверим:</p>
+
+                    <p>1. Когда последний раз Вы были у нас, чтобы предоставить скидку.</p>
+
+                    <p>2. Запомним, что Вы приходили к нам, чтобы в следующий раз предоставить скидку как постоянному
+                       клиенту.</p>
+                </div>
+
+                <form method="post" class="form form-callback">
+                    <label><input type="text" placeholder="Введите имя" name="name"></label>
+                    <label><input type="text" placeholder="+7 ( ххх ) ххх - хх - хх" name="phone"></label>
+
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Отправляя данные, я даю согласие на обработку персональных данных согласно <a
+                              href="#" class="links">Политике конфиденциальности</a></span>
+                    </label>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback2"
+                            data-dismiss="modal">
+                        ПРОДОЛЖИТЬ >
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback" id="modalCallback2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalCallback2" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Подтверждение</span>
+                </button>
+
+                <form method="post" class="form form-callback form-step2">
+                    <label><input type="text" placeholder="Код из SMS" name="code" required></label>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback3"
+                            data-dismiss="modal">
+                        ПРОДОЛЖИТЬ >
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback" id="modalCallback3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalCallback2" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Выберите породу</span>
+                </button>
+
+                <form method="post" class="form form-callback form-step3">
+                    <label><input type="text" placeholder="Введите свою породу" name="breed"></label>
+                </form>
+
+                <h4>популярные:</h4>
+
+                <ul class="list-popular">
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">ЙОРКШИРСКИЙ ТЕРЬЕР</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">НЕМЕЦКИЙ ШПИЦ</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">МАЛЬТИЙСКАЯ БОЛОНКА</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">ВЕСТ ХАЙЛЕНД ВАЙТ ТЕРЬЕР</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">ШИ ТЦУ</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-example" id="modalExample" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <div class="user-author">
+                        <div class="icon"><img src="img/photo10.png" alt=""></div>
+                        <div class="text">Светлана</div>
+                    </div>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-example-left">
+                    <ul class="list">
+                        <li>
+                            <p>Салон:</p>
+                            <span> МИНИ на Космонавтов</span>
+                        </li>
+                        <li>
+                            <p>Порода:</p>
+                            <span>Йоркширский терьер</span>
+                        </li>
+                        <li>
+                            <p>Услуга:</p>
+                            <span>Практичная стрижка</span>
+                        </li>
+                    </ul>
+
+                    <button type="button" data-toggle="modal" data-target="#modalCallback" class="btn btn-white"
+                            data-dismiss="modal">ЗАПИСАТЬСЯ
+                        <br> К ЭТОМУ МАСТЕРУ
+                    </button>
+                </div>
+
+                <div class="modal-example-right">
+                    <div class="modal-gallery">
+                        <div class="img-it"><img src="img/001.jpg" alt=""></div>
+                        <div class="img-it"><img src="img/002.jpg" alt=""></div>
+                        <div class="img-it"><img src="img/003.jpg" alt=""></div>
+                        <div class="img-it"><img src="img/004.jpg" alt=""></div>
+                        <div class="img-it"><img src="img/005.jpg" alt=""></div>
+                        <div class="img-it"><img src="img/006.jpg" alt=""></div>
+                    </div>
+
+                    <a href="#" class="links">Смотреть все работы мастера</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

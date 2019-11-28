@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>mini.pro - Стрижка собак и кошек</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-md-4 header-box__wrapper d-flex align-items-start justify-content-between">
+                <div class="header-box">
+                    <div class="city-wrapper dropdown">
+                        <div class="dropdown-toggle city-active" data-toggle="dropdown" role="button"
+                             aria-haspopup="true" aria-expanded="false">
+                            <div class="icon"><img src="img/loc.svg" alt=""></div>
+                            <div class="text">Москва</div>
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Москва</a>
+                            <a class="dropdown-item" href="#">Королев</a>
+                            <a class="dropdown-item" href="#">Солнечногорск</a>
+                        </div>
+                    </div>
+
+                    <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+
+                    <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ
+                    </button>
+                </div>
+
+                <nav class="navbar navbar-active__menu">
+                    <ul class="nav nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link active">Услуги </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Салоны <span class="quantity">10</span> </a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Акции </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-12 col-md-4 header-logo">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+                    <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO
+Проект Алексея архипова</span>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="header-box">
+                    <nav class="navbar navbar-main__menu">
+                        <ul class="nav menu">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">О нас </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">О компании
+                                                                      MINI.PRO</a>
+                                    <a class="dropdown-item" href="#">Вакансии</a>
+                                    <a class="dropdown-item" href="#">Контакты</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="list-social">
+                        <li><a href="#"><img src="img/social/vk.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main-salon">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title">Салон MINI.PRO Марьино</h1>
+
+                <div class="info-salon">
+                    <div class="info-salon__box">
+                        <div class="icon"><img src="img/loc2.svg" alt=""></div>
+                        <p>Новомарьинская улица,
+                           12/12, корпус 1</p>
+                    </div>
+
+                    <div class="info-salon__box">
+                        <div class="icon"><img src="img/metro2.png" alt=""></div>
+                        <p>Марьино</p>
+                    </div>
+
+                    <div class="info-salon__box">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="32">
+                                <path fill="#FFF" fill-rule="evenodd" d="M10 22a2 2 0 1 1 .001 3.999A2 2 0 0 1 10 22z"/>
+                                <path fill="none" class="path-circle" fill-rule="evenodd" stroke="#FFF" stroke-width="2"
+                                      d="M5 1h10a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z"/>
+                            </svg>
+                        </div>
+                        <a href="tel:+7 999 555 88 77" class="phone">+7 999 555 88 77</a>
+
+                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                            ОНЛАЙН-ЗАПИСЬ
+                        </button>
+                    </div>
+
+                    <div class="info-salon__box">
+                        <div class="icon">
+                            <img src="img/clock2.png" alt="">
+                        </div>
+                        <p>Пн-Вс <br>
+                           c 10:00 до 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="maps-section">
+    <div class="maps"><img src="img/map.png" alt=""></div>
+
+    <a href="#location-info1" class="icon-location icon-location1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
+            <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
+                  d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
+            <path fill-rule="evenodd" class="path-circle"
+                  d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
+        </svg>
+    </a>
+</div>
+
+
+<section class="services pt-50 services-price__section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 services-wrapper">
+                <div class="services-box">
+                    <h2>Услуги и цены</h2>
+                    <div class="form-search__wrapper">
+                        <h4>Выберите породу: </h4>
+                        <form method="post" class="form-search">
+                            <label><input type="text" placeholder="Например: йоркширский терьер..." name="search">
+                                <span class="btn-reset">+</span>
+                            </label>
+
+                            <div class="form-result">
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер черный</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер шоколадный</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер золотой</span>
+                                </a>
+                            </div>
+
+                            <ul class="hashtag-list">
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Йорк</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Шпиц</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Пудель</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Кошка</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="price-table">
+        <div class="table-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 table-head__wrap">
+
+                        <div class="name-services">ПОРОДЫ</div>
+                        <div class="weight weight-one">
+                            <p>ПРАКТИЧНАЯ</p>
+                        </div>
+                        <div class="weight weight-two">
+                            <p>ПРЕМИУМ</p>
+                        </div>
+                        <div class="weight weight-three">
+                            <p>ТРИММИНГ</p>
+                        </div>
+                        <div class="weight weight-four">
+                            <p>АБОНЕМЕНТ 365</p>
+                        </div>
+                        <div class="weight weight-five">
+                            <p>КОГТИ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-body">
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 01
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 02
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 03
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 04
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 05
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 06
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 07
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 08
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 09
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 table-line__wrapper">
+                            <div class="name-services">
+                                Йоркшерский Терьер 10
+                            </div>
+                            <div class="price-it price-it__one">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__two">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__three">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__four">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                            <div class="price-it price-it__five">
+                                <p>1500 ₽</p>
+                                <div class="time">
+                                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                                    <div class="text">1 ч</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><a href="#" class="btn btn-black btn-still">Еще породы</a></div>
+        </div>
+    </div>
+</section>
+
+<section class="lookbook">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 lookbook-wrapper">
+                <div class="lookbook-item">
+                    <div class="box-title">
+                        <h2>LOOKBOOK</h2>
+                        <p>Выберите стрижку для
+                           своего питомца</p>
+                    </div>
+
+                    <div class="sing-up">
+                        <h4>ЗАПИшитесь</h4>
+
+                        <div class="button-group">
+                            <button type="button" class="btn btn-white" data-toggle="modal"
+                                    data-target="#modalCallback">
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="24">
+    <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2"
+          d="M5 1h21a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z"/>
+    <path fill="#FDFDFD" fill-rule="evenodd" d="M9 21h12v2H9v-2z"/>
+</svg>
+</span>
+                                <span class="text">через сайт</span>
+                            </button>
+
+                            <a href="tel:+79995558899" class="btn btn-white">
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="32">
+    <path fill="#FFF" fill-rule="evenodd" d="M10 22a2 2 0 1 1 .001 3.999A2 2 0 0 1 10 22z"/>
+    <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2"
+          d="M5 1h10a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z"/>
+</svg>
+</span><span class="text">+7 999 555 88 99</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lookbook-content">
+                    <div class="form-search__wrapper">
+                        <h4>Выберите породу: </h4>
+                        <form method="post" class="form-search">
+                            <label><input type="text" placeholder="Например: йоркширский терьер..." name="search">
+                                <span class="btn-reset">+</span>
+                            </label>
+
+                            <div class="form-result">
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер черный</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер шоколадный</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                    <span class="text">Йоркширский терьер золотой</span>
+                                </a>
+                            </div>
+
+                            <ul class="hashtag-list">
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Йорк</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Шпиц</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Пудель</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                     data-toggle="dropdown" role="button"
+                                                                     aria-haspopup="true"
+                                                                     aria-expanded="false">#Кошка</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер черный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер шоколадный</span>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="icon"></span>
+                                            <span class="text">Йоркширский терьер золотой</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                    <div class="lookbook-slider__wrapper">
+                        <div class="lookbook-slider lookbook-slider__one">
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo1.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo2.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo3.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo4.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo5.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lookbook-slider lookbook-slider__two">
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo2.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo2.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo3.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo4.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lookbook-slider lookbook-slider__three">
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo3.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo2.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo3.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo4.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo5.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lookbook-slider lookbook-slider__four">
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo4.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo2.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo3.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo4.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo5.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Стрижка машинкой
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lookbook-slider lookbook-slider__five">
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo5.jpg" alt=""></div>
+                                    <a href="#" class="name-services">Подрезание когтей</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo2.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo3.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo4.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="lookbook-box">
+                                    <div class="image"><img src="img/photo5.jpg" alt=""></div>
+                                    <a href="#" class="name-services"><span>Комплекс</span>
+                                        Практичная стрижка
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="groomers">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Грумеры в салоне</h2>
+            </div>
+            <div class="col-12">
+                <div class="groomers-content">
+                    <div class="groomers-box">
+                        <div class="photo"><img src="img/photo10.png" alt=""></div>
+                        <a href="#" class="name">Марина</a>
+                    </div>
+                    <div class="groomers-box">
+                        <div class="photo"><img src="img/photo11.png" alt=""></div>
+                        <a href="#" class="name">Марина</a>
+                    </div>
+                    <div class="groomers-box">
+                        <div class="photo justify-content-center align-items-center"><img src="img/icon-user.png" alt=""></div>
+                        <a href="#" class="name">Марина</a>
+                    </div>
+                    <div class="groomers-box">
+                        <div class="photo justify-content-end"><img src="img/photo12.png" alt=""></div>
+                        <a href="#" class="name">Марина</a>
+                    </div>
+                    <div class="groomers-box">
+                        <div class="photo justify-content-center align-items-center"><img src="img/icon-user.png" alt=""></div>
+                        <a href="#" class="name">Марина</a>
+                    </div>
+                    <div class="groomers-box">
+                        <div class="photo justify-content-center align-items-center"><img src="img/icon-user.png" alt=""></div>
+                        <a href="#" class="name">Марина</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="franchise">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 franchise-content">
+
+                <div class="stages-school__box">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Ф р а н ш и з а</div>
+                    </div>
+
+                </div>
+
+                <div class="franchise-choice">
+                    <div class="franchise-box">
+                        <div class="image"><img src="img/franchise1.jpg" alt=""></div>
+                        <a href="#">Открой свой
+                                    MINI.PRO</a>
+                    </div>
+                    <h5>ИЛИ</h5>
+                    <div class="franchise-box">
+                        <div class="image"><img src="img/franchise2.png" alt=""></div>
+                        <a href="#">Инвестируй</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+                    <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO</span>
+                </a>
+
+                <div class="logo-desc">Проект
+                                       Алексея
+                                       архипова
+                </div>
+            </div>
+
+            <div class="col-12 col-md-10 d-none d-md-flex justify-content-between">
+
+                <div class="footer-box">
+                    <ul class="footer-menu">
+                        <li><a href="#">о MINI.PRO</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+
+                    <ul class="footer-menu">
+                        <li><a href="#">Груминг салоны
+                                        MINI.PRO</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Салоны</a></li>
+                        <li><a href="#">LOOKBOOK</a></li>
+                    </ul>
+
+                    <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ
+                    </button>
+                </div>
+
+                <div class="footer-box">
+                    <ul class="footer-menu">
+                        <li><a href="#">Бутик MINI.PRO</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <ul class="footer-menu">
+                        <li><a href="#">Школа груминга</a></li>
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <ul class="footer-menu">
+                        <li><a href="#">Франшиза</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="copyright">Стрижка кошек и собак в Москве <a href="tel:+79995558877" class="phone">+7 999
+                                                                                                               555 88
+                                                                                                               77</a> <a
+                      href="#" class="links">Политика конфиденциальности</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="btn-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11">
+        <path fill="#FFF" fill-rule="evenodd" d="M5.995-.009L-.008 10.99h12.005L5.995-.009z"/>
+    </svg>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade modal-callback" id="modalCallback" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <h4>Подтверждение</h4>
+
+                <div class="instruction">
+                    <p>Введите свое имя и номер мобильного телефона, на который Вам придет код подтверждения.</p>
+
+                    <p>По номеру телефона мы проверим:</p>
+
+                    <p>1. Когда последний раз Вы были у нас, чтобы предоставить скидку.</p>
+
+                    <p>2. Запомним, что Вы приходили к нам, чтобы в следующий раз предоставить скидку как постоянному
+                       клиенту.</p>
+                </div>
+
+                <form method="post" class="form form-callback">
+                    <label><input type="text" placeholder="Введите имя" name="name"></label>
+                    <label><input type="text" placeholder="+7 ( ххх ) ххх - хх - хх" name="phone"></label>
+
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Отправляя данные, я даю согласие на обработку персональных данных согласно <a
+                              href="#" class="links">Политике конфиденциальности</a></span>
+                    </label>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback2"
+                            data-dismiss="modal">
+                        ПРОДОЛЖИТЬ >
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback" id="modalCallback2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalCallback2" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Подтверждение</span>
+                </button>
+
+                <form method="post" class="form form-callback form-step2">
+                    <label><input type="text" placeholder="Код из SMS" name="code" required></label>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback3"
+                            data-dismiss="modal">
+                        ПРОДОЛЖИТЬ >
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback" id="modalCallback3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalCallback2" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Выберите породу</span>
+                </button>
+
+                <form method="post" class="form form-callback form-step3">
+                    <label><input type="text" placeholder="Введите свою породу" name="breed"></label>
+                </form>
+
+                <h4>популярные:</h4>
+
+                <ul class="list-popular">
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">ЙОРКШИРСКИЙ ТЕРЬЕР</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">НЕМЕЦКИЙ ШПИЦ</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">МАЛЬТИЙСКАЯ БОЛОНКА</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">ВЕСТ ХАЙЛЕНД ВАЙТ ТЕРЬЕР</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="button" data-toggle="modal" data-target="#modalCallback4" data-dismiss="modal">
+                            <span class="text">ШИ ТЦУ</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14">
+    <text fill="#FFF" font-family="Geometria" font-size="14" transform="matrix(1 0 0 1.95235 .303 14.274)">
+        &gt;
+    </text>
+</svg>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
