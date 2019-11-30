@@ -3,24 +3,725 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<ul>
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="salon_mini.html">Салон MINI.PRO Марьино</a></li>
-    <li><a href="all_salon.html">Салоны MINI.PRO в Москве</a></li>
-    <li><a href="pro-school.html">PRO.SCHOOL
-                                  & WORK</a></li>
-    <li><a href="tuition-payment.html">Оплата обучения</a></li>
-    <li><a href="masters.html">Наши мастера</a></li>
-    <li><a href="master_page.html">Мастер Мария</a></li>
-    <li><a href="practical_haircut.html">Практичная стрижка MINI.PRO</a></li>
-    <li><a href="haircut_city.html">Стрижка йорширских
-                                    терьеров в Москве</a></li>
-    <li><a href="cosmetics.html">Косметика для
-                                 собак и кошек</a></li>
-</ul>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="salon_mini.html">Салон MINI.PRO Марьино</a></li>
+                <li><a href="all_salon.html">Салоны MINI.PRO в Москве</a></li>
+                <li><a href="pro-school.html">PRO.SCHOOL
+                                              & WORK</a></li>
+                <li><a href="tuition-payment.html">Оплата обучения</a></li>
+                <li><a href="masters.html">Наши мастера</a></li>
+                <li><a href="master_page.html">Мастер Мария</a></li>
+                <li><a href="practical_haircut.html">Практичная стрижка MINI.PRO</a></li>
+                <li><a href="haircut_city.html">Стрижка йорширских
+                                                терьеров в Москве</a></li>
+                <li><a href="cosmetics.html">Косметика для
+                                             собак и кошек</a></li>
+            </ul>
+        </div>
 
+        <div class="col-12">
+            <br>
+            <h2>Модальные окна</h2>
+
+            <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalServices">
+                Выберите уСЛУГУ
+            </button>
+
+            <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalServices2">
+                Выберите уСЛУГУ 2
+            </button>
+
+            <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalProducts">
+                Шампуни
+            </button>
+
+            <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalMasters">
+                Выберите мастера
+            </button>
+
+            <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalDate">
+                Выбирите дату и время
+            </button>
+
+            <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalEnd">
+                Вы записаны!
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback modal-services" id="modalServices" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalCallback3" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Выберите уСЛУГУ</span>
+                </button>
+
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        Комплекс
+                        <span>Практическая
+                      стрижка MINI.PRO</span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">2000 ₽</div>
+                            <div class="old-price">2500 ₽</div>
+                        </div>
+                        <div class="time">
+                            <div class="icon"><img src="img/clock.svg" alt=""></div>
+                            <div class="text">1.5 ч</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        Комплекс
+                        <span>Стрижка машинкой </span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">1000 ₽</div>
+                            <div class="old-price">1500 ₽</div>
+                        </div>
+                        <div class="time">
+                            <div class="icon"><img src="img/clock.svg" alt=""></div>
+                            <div class="text">1.5 ч</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        Комплекс
+                        <span>Премиум стрижка</span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">2500 ₽</div>
+                            <div class="old-price">3000 ₽</div>
+                        </div>
+                        <div class="time">
+                            <div class="icon"><img src="img/clock.svg" alt=""></div>
+                            <div class="text">1.5 ч</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        <span>ТРИМИНГ</span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">1000 ₽</div>
+                            <div class="old-price">1500 ₽</div>
+                        </div>
+                        <div class="time">
+                            <div class="icon"><img src="img/clock.svg" alt=""></div>
+                            <div class="text">30 мин</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        <span>Подрезание когтей</span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">100 ₽</div>
+                        </div>
+                        <div class="time">
+                            <div class="icon"><img src="img/clock.svg" alt=""></div>
+                            <div class="text">30 мин</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        <span>АБОНЕМЕНТ 360</span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">15000 ₽</div>
+                            <div class="old-price">1800 ₽</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+
+                <div class="products">
+                    <h3>Товары MINI.PRO</h3>
+
+                    <ul class="products-menu">
+                        <li><a href="#">
+                            <span class="text">Шампуни</span><span class="icon"><img src="img/arrow-right3.png" alt=""></span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="text">Кондицинер для шерсти</span><span class="icon"><img
+                              src="img/arrow-right3.png" alt=""></span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="text">Пеленки MINI</span><span class="icon"><img src="img/arrow-right3.png"
+                                                                                          alt=""></span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback modal-services" id="modalServices2" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalServices" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Выберите уСЛУГУ</span>
+                </button>
+
+                <div class="selected-positions">
+                    <div class="selected-positions__wrapper">
+                        <a href="#" class="selected-positions__title">
+                            <span class="text">Выбранные услуги: 2 шт</span>
+                            <span class="icon"><img src="img/arrow-bottom.svg" alt=""></span>
+                        </a>
+
+                        <div class="services-box__line">
+                            <div class="price-wrapper">
+                                <div class="new-price">3400 ₽</div>
+                                <div class="old-price">4000 ₽</div>
+                            </div>
+                        </div>
+                        <p>Цена с учетом вашей скидки</p>
+                    </div>
+
+
+                </div>
+
+                <div class="selected-positions">
+                    <div class="selected-positions__wrapper">
+                        <a href="#" class="selected-positions__title">
+                            <span class="text">Выбранные услуги: 2 шт</span>
+                            <span class="icon"><img src="img/arrow-bottom.svg" alt=""></span>
+                        </a>
+
+                        <div class="services-box__line">
+                            <div class="price-wrapper">
+                                <div class="new-price">3400 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selected-positions__dropdown">
+                        <div class="selected-positions-box">
+                            <div class="btn-close">+</div>
+
+                            <div class="prod-image"><img src="img/prod1.png" alt=""></div>
+
+                            <div class="prod-content">
+                                <a href="#" class="name">Шампунь MINI
+                                                         спелая клубника
+                                                         0,33л</a>
+
+                                <div class="price-wrapper">
+                                    <div class="new-price">3400 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="selected-positions-box">
+                            <div class="btn-close">+</div>
+
+                            <div class="prod-image"><img src="img/prod2.png" alt=""></div>
+
+                            <div class="prod-content">
+                                <a href="#" class="name">Комбо MINI
+                                                         спелая клубника
+                                                         0,33л</a>
+
+                                <div class="price-wrapper">
+                                    <div class="new-price">2100 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selected-positions">
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalProducts"
+                            data-dismiss="modal">
+                        ПРОДОЛЖИТЬ >
+                    </button>
+                </div>
+
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        <span>ТРИМИНГ</span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">1000 ₽</div>
+                            <div class="old-price">1500 ₽</div>
+                        </div>
+                        <div class="time">
+                            <div class="icon"><img src="img/clock.svg" alt=""></div>
+                            <div class="text">30 мин</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        <span>Подрезание когтей</span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">100 ₽</div>
+                        </div>
+                        <div class="time">
+                            <div class="icon"><img src="img/clock.svg" alt=""></div>
+                            <div class="text">30 мин</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+                <div class="services-box__modal">
+                    <a href="#" class="name-services">
+                        <span>АБОНЕМЕНТ 360</span>
+                    </a>
+
+                    <div class="services-box__line">
+                        <div class="price-wrapper">
+                            <div class="new-price">15000 ₽</div>
+                            <div class="old-price">1800 ₽</div>
+                        </div>
+                    </div>
+
+                    <p>Цена с учетом вашей скидки</p>
+                </div>
+
+                <div class="products">
+                    <h3>Товары MINI.PRO</h3>
+
+                    <ul class="products-menu">
+                        <li><a href="#">
+                            <span class="text">Шампуни</span><span class="icon"><img src="img/arrow-right3.png" alt=""></span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="text">Кондицинер для шерсти</span><span class="icon"><img
+                              src="img/arrow-right3.png" alt=""></span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="text">Пеленки MINI</span><span class="icon"><img src="img/arrow-right3.png"
+                                                                                          alt=""></span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback modal-services" id="modalProducts" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalServices2" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Шампуни</span>
+                </button>
+
+                <div class="selected-positions-box">
+                    <div class="prod-image"><img src="img/prod1.png" alt=""></div>
+
+                    <div class="prod-content">
+                        <a href="#" class="name">Шампунь MINI
+                                                 спелая клубника
+                                                 0,33л</a>
+
+                        <div class="services-box__line">
+                            <div class="price-wrapper">
+                                <div class="new-price">1330 ₽</div>
+                            </div>
+                            <a href="#" class="btn-basket"><img src="img/basket.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-positions-box">
+                    <div class="prod-image"><img src="img/prod1.png" alt=""></div>
+
+                    <div class="prod-content">
+                        <a href="#" class="name">Шампунь MINI
+                                                 спелая клубника
+                                                 0,33л</a>
+
+                        <div class="services-box__line">
+                            <div class="price-wrapper">
+                                <div class="new-price">1330 ₽</div>
+                            </div>
+                            <a href="#" class="btn-basket"><img src="img/basket.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-positions-box">
+                    <div class="prod-image"><img src="img/prod1.png" alt=""></div>
+
+                    <div class="prod-content">
+                        <a href="#" class="name">Шампунь MINI
+                                                 спелая клубника
+                                                 0,33л</a>
+
+                        <div class="services-box__line">
+                            <div class="price-wrapper">
+                                <div class="new-price">1330 ₽</div>
+                            </div>
+                            <a href="#" class="btn-basket"><img src="img/basket.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selected-positions">
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalServices2"
+                            data-dismiss="modal">
+                        < ВЕРНУТЬСЯ
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback modal-services" id="modalMasters" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalServices2" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Выберите мастера</span>
+                </button>
+
+                <div class="selected-positions selected-positions__masters">
+                    <div class="selected-positions__wrapper">
+                        <a href="#" class="selected-positions__title">
+                            <span class="text">ЛЮБОЙ МАСТЕР</span>
+                            <span class="icon"><img src="img/arrow-right4.png" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="selected-positions selected-positions__masters">
+                    <div class="selected-positions__wrapper">
+                        <a href="#" class="selected-positions__title">
+                            <span class="text">ВЫБРАТЬ МАСТЕРА</span>
+                            <span class="icon"><img src="img/arrow-bottom.svg" alt=""></span>
+                        </a>
+                    </div>
+                    <div class="selected-positions__dropdown masters-wrapper__dropdown">
+
+                        <div class="selected-positions-box master-box">
+
+                            <div class="prod-image"><img src="img/photo10.png" alt=""></div>
+
+                            <a href="#" class="prod-content">
+                                <span class="name">Светлана</span>
+                                <span class="icon"><img src="img/arrow-right4.png" alt=""></span>
+                            </a>
+                        </div>
+                        <div class="selected-positions-box master-box">
+
+                            <div class="prod-image"><img src="img/photo11.png" alt=""></div>
+
+                            <a href="#" class="prod-content">
+                                <span class="name">Мария</span>
+                                <span class="icon"><img src="img/arrow-right4.png" alt=""></span>
+                            </a>
+                        </div>
+                        <div class="selected-positions-box master-box">
+
+                            <div class="prod-image"><img src="img/photo12.png" alt=""></div>
+
+                            <a href="#" class="prod-content">
+                                <span class="name">Ирина</span>
+                                <span class="icon"><img src="img/arrow-right4.png" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback modal-date" id="modalDate" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <button type="button" data-toggle="modal" data-target="#modalServices2" class="links-next"
+                        data-dismiss="modal">
+                    <span class="icon"><img src="img/arrow-left2.png" alt=""></span>
+                    <span class="text">Выбирите дату и время</span>
+                </button>
+
+                <div class="dates-slider owl-carousel">
+                    <div class="date-box carousel_item">
+                        <div class="date">20</div>
+                        <div class="name-month">Августа</div>
+                    </div>
+                    <div class="date-box carousel_item">
+                        <div class="date">21</div>
+                        <div class="name-month">Августа</div>
+                    </div>
+                    <div class="date-box carousel_item">
+                        <div class="date">22</div>
+                        <div class="name-month">Августа</div>
+                    </div>
+                    <div class="date-box carousel_item">
+                        <div class="date">23</div>
+                        <div class="name-month">Августа</div>
+                    </div>
+                    <div class="date-box carousel_item">
+                        <div class="date">24</div>
+                        <div class="name-month">Августа</div>
+                    </div>
+                    <div class="date-box carousel_item">
+                        <div class="date">25</div>
+                        <div class="name-month">Августа</div>
+                    </div>
+                    <div class="date-box carousel_item">
+                        <div class="date">26</div>
+                        <div class="name-month">Августа</div>
+                    </div>
+                    <div class="date-box carousel_item">
+                        <div class="date">27</div>
+                        <div class="name-month">Августа</div>
+                    </div>
+                </div>
+
+                <div class="duration">
+                    <div class="icon"><img src="img/clock.svg" alt=""></div>
+                    <div class="text">
+                        <p>Длительность: </p>
+                        <span>Примерно 1 ч 30 минут.</span>
+                    </div>
+                </div>
+
+                <div class="time-record">
+                    <div class="time-record__item active">10 : 00</div>
+                    <div class="time-record__item">10 : 15</div>
+                    <div class="time-record__item">10 : 30</div>
+                    <div class="time-record__item">10 : 45</div>
+                    <div class="time-record__item">11 : 00</div>
+                    <div class="time-record__item">11 : 15</div>
+                    <div class="time-record__item">11 : 30</div>
+                    <div class="time-record__item">11 : 45</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-callback modal-end" id="modalEnd" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">+</span>
+                </button>
+                <div class="modal-title">
+                    <div class="logo-section">
+                        <div class="icon"><img src="img/logo.png" alt=""></div>
+                        <div class="text">Онлайн - запись</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+
+                <div class="result-record">
+                    <h2 class="modal-body__title">Вы записаны!</h2>
+
+                    <ul class="list-info">
+                        <li>
+                            <strong>Услуга:</strong>
+                            <p>Комплекс MINI.PRO, 1500 ₽</p>
+                        </li>
+
+                        <li><strong>Дата и время:</strong>
+                            <p>28 августа, 14:15</p>
+                            <p>(длительность: 1ч 30 мин)</p></li>
+
+                        <li><strong>Салон:</strong>
+                            <p>Мини Алтуфьево</p></li>
+
+                        <li><strong>Адрес:</strong>
+                            <p>Алтуфьевское шоссе, 72 ТЦ "Наш"</p></li>
+
+                        <li><p>Дополнительная информация
+                               по телефону: <a href="tel:+79995558877">+7 999 555 88 77</a></p></li>
+                    </ul>
+
+                    <a href="#" class="btn btn-border">Записать еще одного питомца</a>
+
+                    <a href="#" class="btn btn-black">Оплатить товары</a>
+
+                    <div class="description-pay">Чтобы получить товар в выбранном салоне, небходимо их оплатить</div>
+                </div>
+
+                <h4>Выбранные товары</h4>
+
+                <div class="selected-positions-box">
+                    <div class="prod-image"><img src="img/prod1.png" alt=""></div>
+
+                    <div class="prod-content">
+                        <a href="#" class="name">Шампунь MINI
+                                                 спелая клубника
+                                                 0,33л</a>
+
+                        <div class="price-wrapper">
+                            <div class="new-price">1330 ₽</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-positions-box">
+                    <div class="prod-image"><img src="img/prod1.png" alt=""></div>
+
+                    <div class="prod-content">
+                        <a href="#" class="name">Шампунь MINI
+                                                 спелая клубника
+                                                 0,33л</a>
+
+                        <div class="price-wrapper">
+                            <div class="new-price">2530 ₽</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total-sum">
+                    2530 ₽
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>

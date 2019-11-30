@@ -64,11 +64,23 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"></button>'
     });
 
+    $('.dates-slider').owlCarousel({
+        items: 5,
+        center: true,
+        loop:true,
+        nav: true,
+        navText: [''],
+        dots: false,
+        margin: 0
+    });
+
     // interactive maps
     $('.icon-location').click(function (e) {
         e.preventDefault();
+        $('.icon-location').removeClass('click');
+        $(this).addClass('click');
 
-        $(this).closest('.section-contacts').find('.location-info').removeClass('active');
+        $(this).closest('.section-contacts, .location-maps').find('.location-info').removeClass('active');
 
         var selectTab = $(this).attr("href");
 
@@ -80,6 +92,12 @@ $(document).ready(function () {
     });
 
     $('[data-fancybox="images"]').fancybox();
+
+    $('.selected-positions__title').click(function () {
+        $(this).parents('.selected-positions').toggleClass('open').find('.selected-positions__dropdown').slideToggle();
+    });
+
+
 
 
 });
