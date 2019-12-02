@@ -128,5 +128,17 @@ $(document).ready(function () {
     });
 
 
+    function mediaClick() {
+        var checkWidth = $(window).width();
+        if (checkWidth < 768) {
+            $('.services-price__section .name-services').click(function () {
+                $(this).toggleClass('active').siblings('.table-body .weight, .table-body .price-it').slideToggle();
+            });
+        }
+
+    }
+
+    mediaClick();
+    $(window).resize(mediaClick);
 });
 

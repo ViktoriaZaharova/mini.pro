@@ -860,19 +860,19 @@ header
 
 .slick-next
 	right: 21px
-	background: url("../img/arrow-right.svg") no-repeat center
+	background: url("../img/arr-right-white.png") no-repeat center
 		size: contain
 	&:hover
-		background: url("../img/arrow-right.svg") no-repeat center
+		background: url("../img/arr-right-white.png") no-repeat center
 			size: contain
 
 
 .slick-prev
 	left: 21px
-	background: url("../img/arrow-left.svg") no-repeat center
+	background: url("../img/arr-left-white.png") no-repeat center
 		size: contain
 	&:hover
-		background: url("../img/arrow-left.svg") no-repeat center
+		background: url("../img/arr-left-white.png") no-repeat center
 			size: contain
 
 .slick-dotted.slick-slider
@@ -1046,7 +1046,7 @@ header
 			display: inline
 			font-size: 20px
 			position: relative
-			padding: 0 18px 0 0
+
 			font-family: $medium
 			&:before
 				content: ''
@@ -1059,6 +1059,7 @@ header
 				height: 10px
 			.text
 				text-decoration: underline
+				padding: 0 18px 0 0
 			&:hover
 				.text
 					text-decoration: none
@@ -2059,6 +2060,9 @@ footer
 	.price-table
 		padding: 0
 		width: 100%
+		.table-body
+			.weight
+				display: none
 		.table-head
 			padding: 19px 0
 			margin: 0
@@ -2067,6 +2071,7 @@ footer
 				bottom: 1px solid #dadada
 		.name-services
 			width: 375px
+			text-transform: none
 		.weight-one, .price-it__one
 			width: 165px
 		.weight-two, .price-it__two
@@ -2107,8 +2112,11 @@ footer
 	margin: 49px 0 0 0
 	display: flex
 	align-items: flex-start
-	flex-wrap: wrap
 	justify-content: space-between
+	flex-wrap: wrap
+
+.groomers-content__salon
+	flex-wrap: nowrap
 
 .groomers-box
 	width: 149px
@@ -2395,12 +2403,23 @@ footer
 		font-size: 16px
 		margin: 0 0 42px
 	.hashtag-list
+		.dropdown.show
+			.dropdown-toggle
+				&:before
+					background: #f1f1f1
 		li
 			.dropdown-toggle
 				background-color: #f1f1f1
 				color: #1b1b1b
 				&:after
 					border-top-color: #000
+			.dropdown-menu
+				background-color: #f1f1f1
+				.dropdown-item
+					color: #1b1b1b
+				.icon
+					img
+						filter: invert(1)
 
 .list-price
 	li
@@ -2435,6 +2454,11 @@ footer
 			&:hover
 				.text
 					text-decoration: none
+
+.masters-examples
+	padding: 0
+	.lookbook-item
+		padding: 49px 0 0
 
 .examples-work__wrapper
 	width: 100%
@@ -2978,5 +3002,8 @@ footer
 	padding: 23px 0 34px
 	.list-social
 		justify-content: center
+
+.salon-city__contacts
+	height: 500px
 
 @import "media" // Всегда в конце
