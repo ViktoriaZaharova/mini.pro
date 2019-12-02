@@ -28,10 +28,28 @@
 <body>
 
 <header>
+    <div class="icon-mobile-wrapper">
+        <a href="#" class="link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24">
+                <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2"
+                      d="M5 1h21a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z"/>
+                <path fill="#FDFDFD" fill-rule="evenodd" d="M9 21h12v2H9v-2z"/>
+            </svg>
+        </a>
+
+        <a href="#" class="link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="32">
+                <path fill="#FFF" fill-rule="evenodd" d="M10 22a2 2 0 1 1 .001 3.999A2 2 0 0 1 10 22z"/>
+                <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2"
+                      d="M5 1h10a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z"/>
+            </svg>
+        </a>
+    </div>
+
     <div class="container">
         <div class="row">
 
-            <div class="col-12 col-md-4 header-box__wrapper d-flex align-items-start justify-content-between">
+            <div class="col-12 col-md-4 header-box__wrapper align-items-start justify-content-between d-none d-md-flex">
                 <div class="header-box">
                     <div class="city-wrapper dropdown">
                         <div class="dropdown-toggle city-active" data-toggle="dropdown" role="button"
@@ -65,6 +83,8 @@
             </div>
 
             <div class="col-12 col-md-4 header-logo">
+
+
                 <a href="index.html" class="logo">
                     <span class="logo-icon"><img src="img/logo.png" alt=""></span>
                     <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO
@@ -72,7 +92,7 @@
                 </a>
             </div>
 
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 d-none d-md-flex">
                 <div class="header-box">
                     <nav class="navbar navbar-main__menu">
                         <ul class="nav menu">
@@ -98,6 +118,55 @@
                         <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-burger">
+        <span></span><span></span><span></span>
+    </div>
+
+    <div class="mobile-menu__wrapper">
+        <div class="mobile-menu">
+            <div class="btn-close-menu"><img src="img/btn-close.png" alt=""></div>
+
+            <div class="mobile-menu__top">
+                <nav class="navbar navbar-active__menu">
+                    <ul class="nav nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link active">Услуги </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Салоны <span class="quantity">10</span> </a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Акции </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mobile-menu__center">
+                <nav class="navbar navbar-main__menu">
+                    <ul class="nav menu">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">О нас </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">О компании
+                                                                  MINI.PRO</a>
+                                <a class="dropdown-item" href="#">Вакансии</a>
+                                <a class="dropdown-item" href="#">Контакты</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mobile-menu__bottom">
+                <ul class="list-social">
+                    <li><a href="#"><img src="img/social/vk.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/social/youtube.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -177,7 +246,7 @@
                         </form>
                     </div>
 
-                    <div class="form-search__wrapper">
+                    <div class="form-search__wrapper d-none d-md-flex">
                         <h4>Выберите породу: </h4>
                         <form method="post" class="form-search">
                             <label><input type="text" placeholder="Например: йоркширский терьер..." name="search">
@@ -264,15 +333,15 @@
                                                                      aria-expanded="false">#Кошка</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#">
-                                            <span class="icon"></span>
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
                                             <span class="text">Йоркширский терьер черный</span>
                                         </a>
                                         <a class="dropdown-item" href="#">
-                                            <span class="icon"></span>
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
                                             <span class="text">Йоркширский терьер шоколадный</span>
                                         </a>
                                         <a class="dropdown-item" href="#">
-                                            <span class="icon"></span>
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
                                             <span class="text">Йоркширский терьер золотой</span>
                                         </a>
                                     </div>
@@ -282,7 +351,7 @@
                     </div>
 
                     <div class="price-table">
-                        <div class="table-head">
+                        <div class="table-head d-md-flex d-none">
                             <div class="name-services">Стрижка</div>
                             <div class="weight weight-one">
                                 <div class="icon"><img src="img/val-icon.png" alt=""></div>
@@ -299,11 +368,206 @@
                         </div>
                         <div class="table-body">
                             <div class="table-line">
-                                <div class="name-services">
-                                    <span>Комплекс</span>
-                                    ПРАКТИЧНАЯ СТРИЖКА
+                                <div class="form-search__wrapper d-flex d-md-none">
+                                    <h4>Выберите породу: </h4>
+                                    <form method="post" class="form-search">
+                                        <label><input type="text" placeholder="Например: йорк..." name="search">
+                                            <span class="btn-reset">+</span>
+                                        </label>
+
+                                        <div class="form-result">
+                                            <a class="dropdown-item" href="#">
+                                                <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                <span class="text">Йоркширский терьер черный</span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                <span class="text">Йоркширский терьер шоколадный</span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                <span class="text">Йоркширский терьер золотой</span>
+                                            </a>
+                                        </div>
+
+                                        <ul class="hashtag-list d-none d-sm-flex">
+                                            <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                                 data-toggle="dropdown" role="button"
+                                                                                 aria-haspopup="true"
+                                                                                 aria-expanded="false">#Йорк</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер черный</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер шоколадный</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер золотой</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                                 data-toggle="dropdown" role="button"
+                                                                                 aria-haspopup="true"
+                                                                                 aria-expanded="false">#Шпиц</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер черный</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер шоколадный</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер золотой</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                                 data-toggle="dropdown" role="button"
+                                                                                 aria-haspopup="true"
+                                                                                 aria-expanded="false">#Пудель</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер черный</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер шоколадный</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер золотой</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+
+                                            <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                                 data-toggle="dropdown" role="button"
+                                                                                 aria-haspopup="true"
+                                                                                 aria-expanded="false">#Кошка</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер черный</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер шоколадный</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <span class="icon"><img src="img/arrow-right2.png"
+                                                                                alt=""></span>
+                                                        <span class="text">Йоркширский терьер золотой</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                    <ul class="hashtag-list d-flex d-sm-none">
+                                        <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                             data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">#Йорк</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер черный</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер шоколадный</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер золотой</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                             data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">#Шпиц</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер черный</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер шоколадный</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер золотой</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                             data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">#Пудель</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер черный</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер шоколадный</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер золотой</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
+                                                                             data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">#Кошка</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер черный</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер шоколадный</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                                    <span class="text">Йоркширский терьер золотой</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
 
+                                <a href="#" class="name-services">
+                                    <span>Комплекс</span>
+                                    ПРАКТИЧНАЯ СТРИЖКА
+                                </a>
+
+                                <div class="weight weight-one d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>до 20 кг</p>
+                                </div>
                                 <div class="price-it price-it__one">
                                     <p>1500 ₽</p>
                                     <div class="time">
@@ -311,12 +575,21 @@
                                         <div class="text">1.5 ч</div>
                                     </div>
                                 </div>
+                                <div class="weight weight-two d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 20 до 40 кг</p>
+                                </div>
+
                                 <div class="price-it price-it__two">
                                     <p>3000 ₽</p>
                                     <div class="time">
                                         <div class="icon"><img src="img/clock.svg" alt=""></div>
                                         <div class="text">1.5 ч</div>
                                     </div>
+                                </div>
+                                <div class="weight weight-three d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 40 кг</p>
                                 </div>
                                 <div class="price-it price-it__three">
                                     <p>5000 ₽</p>
@@ -327,11 +600,15 @@
                                 </div>
                             </div>
                             <div class="table-line">
-                                <div class="name-services">
+                                <a href="#" class="name-services">
                                     <span>Комплекс</span>
                                     СТРИЖКА МАШИНОКЙ
-                                </div>
+                                </a>
 
+                                <div class="weight weight-one d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>до 20 кг</p>
+                                </div>
                                 <div class="price-it price-it__one">
                                     <p>1000 ₽</p>
                                     <div class="time">
@@ -339,12 +616,20 @@
                                         <div class="text">1 ч</div>
                                     </div>
                                 </div>
+                                <div class="weight weight-two d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 20 до 40 кг</p>
+                                </div>
                                 <div class="price-it price-it__two">
                                     <p>2000 ₽</p>
                                     <div class="time">
                                         <div class="icon"><img src="img/clock.svg" alt=""></div>
                                         <div class="text">1 ч</div>
                                     </div>
+                                </div>
+                                <div class="weight weight-three d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 40 кг</p>
                                 </div>
                                 <div class="price-it price-it__three">
                                     <p>3000 ₽</p>
@@ -355,11 +640,14 @@
                                 </div>
                             </div>
                             <div class="table-line">
-                                <div class="name-services">
+                                <a href="#" class="name-services">
                                     <span>Комплекс</span>
                                     ПРЕМИУМ СТРИЖКА
+                                </a>
+                                <div class="weight weight-one d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>до 20 кг</p>
                                 </div>
-
                                 <div class="price-it price-it__one">
                                     <p>2500 ₽</p>
                                     <div class="time">
@@ -367,12 +655,20 @@
                                         <div class="text">2.5 ч</div>
                                     </div>
                                 </div>
+                                <div class="weight weight-two d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 20 до 40 кг</p>
+                                </div>
                                 <div class="price-it price-it__two">
                                     <p>3500 ₽</p>
                                     <div class="time">
                                         <div class="icon"><img src="img/clock.svg" alt=""></div>
                                         <div class="text">2.5 ч</div>
                                     </div>
+                                </div>
+                                <div class="weight weight-three d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 40 кг</p>
                                 </div>
                                 <div class="price-it price-it__three">
                                     <p>7000 ₽</p>
@@ -383,10 +679,13 @@
                                 </div>
                             </div>
                             <div class="table-line">
-                                <div class="name-services">
+                                <a href="#" class="name-services">
                                     ТРИМИНГ
+                                </a>
+                                <div class="weight weight-one d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>до 20 кг</p>
                                 </div>
-
                                 <div class="price-it price-it__one">
                                     <p>1000 ₽</p>
                                     <div class="time">
@@ -394,12 +693,20 @@
                                         <div class="text">30 мин</div>
                                     </div>
                                 </div>
+                                <div class="weight weight-two d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 20 до 40 кг</p>
+                                </div>
                                 <div class="price-it price-it__two">
                                     <p>2500 ₽</p>
                                     <div class="time">
                                         <div class="icon"><img src="img/clock.svg" alt=""></div>
                                         <div class="text">30 мин</div>
                                     </div>
+                                </div>
+                                <div class="weight weight-three d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 40 кг</p>
                                 </div>
                                 <div class="price-it price-it__three">
                                     <p>3000 ₽</p>
@@ -410,10 +717,13 @@
                                 </div>
                             </div>
                             <div class="table-line">
-                                <div class="name-services">
+                                <a href="#" class="name-services">
                                     Подрезание когтей
+                                </a>
+                                <div class="weight weight-one d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>до 20 кг</p>
                                 </div>
-
                                 <div class="price-it price-it__one">
                                     <p>250 ₽</p>
                                     <div class="time">
@@ -421,12 +731,20 @@
                                         <div class="text">15 мин</div>
                                     </div>
                                 </div>
+                                <div class="weight weight-two d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 20 до 40 кг</p>
+                                </div>
                                 <div class="price-it price-it__two">
                                     <p>250 ₽</p>
                                     <div class="time">
                                         <div class="icon"><img src="img/clock.svg" alt=""></div>
                                         <div class="text">15 мин</div>
                                     </div>
+                                </div>
+                                <div class="weight weight-three d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 40 кг</p>
                                 </div>
                                 <div class="price-it price-it__three">
                                     <p>250 ₽</p>
@@ -437,15 +755,26 @@
                                 </div>
                             </div>
                             <div class="table-line">
-                                <div class="name-services">
+                                <a href="#" class="name-services">
                                     Абонемент 365
+                                </a>
+                                <div class="weight weight-one d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>до 20 кг</p>
                                 </div>
-
                                 <div class="price-it price-it__one">
                                     <p>15000 ₽</p>
                                 </div>
+                                <div class="weight weight-two d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 20 до 40 кг</p>
+                                </div>
                                 <div class="price-it price-it__two">
                                     <p>30000 ₽</p>
+                                </div>
+                                <div class="weight weight-three d-flex d-md-none">
+                                    <div class="icon"><img src="img/val-icon.png" alt=""></div>
+                                    <p>от 40 кг</p>
                                 </div>
                                 <div class="price-it price-it__three">
                                     <p>-</p>
@@ -519,7 +848,7 @@
                                 </a>
                             </div>
 
-                            <ul class="hashtag-list">
+                            <ul class="hashtag-list d-sm-flex d-none">
                                 <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle"
                                                                      data-toggle="dropdown" role="button"
                                                                      aria-haspopup="true"
@@ -584,21 +913,97 @@
                                                                      aria-expanded="false">#Кошка</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#">
-                                            <span class="icon"></span>
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
                                             <span class="text">Йоркширский терьер черный</span>
                                         </a>
                                         <a class="dropdown-item" href="#">
-                                            <span class="icon"></span>
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
                                             <span class="text">Йоркширский терьер шоколадный</span>
                                         </a>
                                         <a class="dropdown-item" href="#">
-                                            <span class="icon"></span>
+                                            <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
                                             <span class="text">Йоркширский терьер золотой</span>
                                         </a>
                                     </div>
                                 </li>
                             </ul>
                         </form>
+
+                        <ul class="hashtag-list d-flex d-sm-none">
+                            <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                                 role="button" aria-haspopup="true"
+                                                                 aria-expanded="false">#Йорк</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер черный</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер шоколадный</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер золотой</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                                 role="button" aria-haspopup="true"
+                                                                 aria-expanded="false">#Шпиц</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер черный</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер шоколадный</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер золотой</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                                 role="button" aria-haspopup="true"
+                                                                 aria-expanded="false">#Пудель</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер черный</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер шоколадный</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер золотой</span>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="dropdown hashtag-item"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                                 role="button" aria-haspopup="true"
+                                                                 aria-expanded="false">#Кошка</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер черный</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер шоколадный</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><img src="img/arrow-right2.png" alt=""></span>
+                                        <span class="text">Йоркширский терьер золотой</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="lookbook-slider__wrapper">
@@ -812,12 +1217,184 @@
 </section>
 
 <section class="section-contacts">
-    <div class="maps"><img src="img/map.png" alt=""></div>
+    <div class="maps"><img src="img/map.png" alt="">
+        <a href="#location-info1" class="icon-location icon-location1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
+                <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
+                      d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
+                <path fill-rule="evenodd" class="path-circle"
+                      d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
+            </svg>
+        </a>
+        <a href="#location-info2" class="icon-location icon-location2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
+                <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
+                      d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
+                <path fill-rule="evenodd" class="path-circle"
+                      d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
+            </svg>
+        </a>
+        <a href="#location-info3" class="icon-location icon-location3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
+                <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
+                      d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
+                <path fill-rule="evenodd" class="path-circle"
+                      d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
+            </svg>
+        </a>
+        <a href="#location-info4" class="icon-location icon-location4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
+                <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
+                      d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
+                <path fill-rule="evenodd" class="path-circle"
+                      d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
+            </svg>
+        </a>
+        <a href="#location-info5" class="icon-location icon-location5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
+                <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
+                      d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
+                <path fill-rule="evenodd" class="path-circle"
+                      d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
+            </svg>
+        </a>
+
+        <div class="location-info active" id="location-info1">
+            <div class="btn-close">+</div>
+
+            <h3>Груминг салон
+                MINI.PRO МАРЬИНО</h3>
+
+            <div class="address">
+                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                    Новомарьинская улица, 12/12,
+                    корпус 1 </p>
+                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+            </div>
+
+            <a href="#" class="links">Подробнее о салоне</a>
+            <a href="#" class="links">Мастера в салоне</a>
+            <a href="#" class="links">Фото работ</a>
+
+            <div class="phone-wrap">
+                <p>Запишитесь: </p>
+                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+            </div>
+
+            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                ОНЛАЙН-ЗАПИСЬ В САЛОН
+            </button>
+        </div>
+        <div class="location-info" id="location-info2">
+            <div class="btn-close">+</div>
+
+            <h3>Груминг салон
+                MINI.PRO МАРЬИНО 2</h3>
+
+            <div class="address">
+                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                    Новомарьинская улица, 12/12,
+                    корпус 1 </p>
+                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+            </div>
+
+            <a href="#" class="links">Подробнее о салоне</a>
+            <a href="#" class="links">Мастера в салоне</a>
+            <a href="#" class="links">Фото работ</a>
+
+            <div class="phone-wrap">
+                <p>Запишитесь: </p>
+                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+            </div>
+
+            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                ОНЛАЙН-ЗАПИСЬ В САЛОН
+            </button>
+        </div>
+        <div class="location-info" id="location-info3">
+            <div class="btn-close">+</div>
+
+            <h3>Груминг салон
+                MINI.PRO МАРЬИНО 3</h3>
+
+            <div class="address">
+                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                    Новомарьинская улица, 12/12,
+                    корпус 1 </p>
+                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+            </div>
+
+            <a href="#" class="links">Подробнее о салоне</a>
+            <a href="#" class="links">Мастера в салоне</a>
+            <a href="#" class="links">Фото работ</a>
+
+            <div class="phone-wrap">
+                <p>Запишитесь: </p>
+                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+            </div>
+
+            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                ОНЛАЙН-ЗАПИСЬ В САЛОН
+            </button>
+        </div>
+        <div class="location-info" id="location-info4">
+            <div class="btn-close">+</div>
+
+            <h3>Груминг салон
+                MINI.PRO МАРЬИНО</h3>
+
+            <div class="address">
+                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                    Новомарьинская улица, 12/12,
+                    корпус 1 </p>
+                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+            </div>
+
+            <a href="#" class="links">Подробнее о салоне</a>
+            <a href="#" class="links">Мастера в салоне</a>
+            <a href="#" class="links">Фото работ</a>
+
+            <div class="phone-wrap">
+                <p>Запишитесь: </p>
+                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+            </div>
+
+            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                ОНЛАЙН-ЗАПИСЬ В САЛОН
+            </button>
+        </div>
+        <div class="location-info" id="location-info5">
+            <div class="btn-close">+</div>
+
+            <h3>Груминг салон
+                MINI.PRO МАРЬИНО</h3>
+
+            <div class="address">
+                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                    Новомарьинская улица, 12/12,
+                    корпус 1 </p>
+                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+            </div>
+
+            <a href="#" class="links">Подробнее о салоне</a>
+            <a href="#" class="links">Мастера в салоне</a>
+            <a href="#" class="links">Фото работ</a>
+
+            <div class="phone-wrap">
+                <p>Запишитесь: </p>
+                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+            </div>
+
+            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                ОНЛАЙН-ЗАПИСЬ В САЛОН
+            </button>
+        </div>
+    </div>
 
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12">
                 <div class="box-title">
                     <h2>Адреса</h2>
                     <p>Выберите
@@ -828,179 +1405,7 @@
 
             </div>
 
-            <div class="col-12 col-md-9 justify-content-end d-flex">
-                <div class="location-info active" id="location-info1">
-                    <div class="btn-close">+</div>
 
-                    <h3>Груминг салон
-                        MINI.PRO МАРЬИНО</h3>
-
-                    <div class="address">
-                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                            Новомарьинская улица, 12/12,
-                            корпус 1 </p>
-                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-                    </div>
-
-                    <a href="#" class="links">Подробнее о салоне</a>
-                    <a href="#" class="links">Мастера в салоне</a>
-                    <a href="#" class="links">Фото работ</a>
-
-                    <div class="phone-wrap">
-                        <p>Запишитесь: </p>
-                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-                    </div>
-
-                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                        ОНЛАЙН-ЗАПИСЬ В САЛОН
-                    </button>
-                </div>
-                <div class="location-info" id="location-info2">
-                    <div class="btn-close">+</div>
-
-                    <h3>Груминг салон
-                        MINI.PRO МАРЬИНО 2</h3>
-
-                    <div class="address">
-                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                            Новомарьинская улица, 12/12,
-                            корпус 1 </p>
-                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-                    </div>
-
-                    <a href="#" class="links">Подробнее о салоне</a>
-                    <a href="#" class="links">Мастера в салоне</a>
-                    <a href="#" class="links">Фото работ</a>
-
-                    <div class="phone-wrap">
-                        <p>Запишитесь: </p>
-                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-                    </div>
-
-                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                        ОНЛАЙН-ЗАПИСЬ В САЛОН
-                    </button>
-                </div>
-                <div class="location-info" id="location-info3">
-                    <div class="btn-close">+</div>
-
-                    <h3>Груминг салон
-                        MINI.PRO МАРЬИНО 3</h3>
-
-                    <div class="address">
-                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                            Новомарьинская улица, 12/12,
-                            корпус 1 </p>
-                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-                    </div>
-
-                    <a href="#" class="links">Подробнее о салоне</a>
-                    <a href="#" class="links">Мастера в салоне</a>
-                    <a href="#" class="links">Фото работ</a>
-
-                    <div class="phone-wrap">
-                        <p>Запишитесь: </p>
-                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-                    </div>
-
-                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                        ОНЛАЙН-ЗАПИСЬ В САЛОН
-                    </button>
-                </div>
-                <div class="location-info" id="location-info4">
-                    <div class="btn-close">+</div>
-
-                    <h3>Груминг салон
-                        MINI.PRO МАРЬИНО</h3>
-
-                    <div class="address">
-                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                            Новомарьинская улица, 12/12,
-                            корпус 1 </p>
-                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-                    </div>
-
-                    <a href="#" class="links">Подробнее о салоне</a>
-                    <a href="#" class="links">Мастера в салоне</a>
-                    <a href="#" class="links">Фото работ</a>
-
-                    <div class="phone-wrap">
-                        <p>Запишитесь: </p>
-                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-                    </div>
-
-                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                        ОНЛАЙН-ЗАПИСЬ В САЛОН
-                    </button>
-                </div>
-                <div class="location-info" id="location-info5">
-                    <div class="btn-close">+</div>
-
-                    <h3>Груминг салон
-                        MINI.PRO МАРЬИНО</h3>
-
-                    <div class="address">
-                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                            Новомарьинская улица, 12/12,
-                            корпус 1 </p>
-                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-                    </div>
-
-                    <a href="#" class="links">Подробнее о салоне</a>
-                    <a href="#" class="links">Мастера в салоне</a>
-                    <a href="#" class="links">Фото работ</a>
-
-                    <div class="phone-wrap">
-                        <p>Запишитесь: </p>
-                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-                    </div>
-
-                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                        ОНЛАЙН-ЗАПИСЬ В САЛОН
-                    </button>
-                </div>
-            </div>
-
-            <a href="#location-info1" class="icon-location icon-location1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
-                    <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
-                          d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
-                    <path fill-rule="evenodd" class="path-circle"
-                          d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
-                </svg>
-            </a>
-            <a href="#location-info2" class="icon-location icon-location2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
-                    <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
-                          d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
-                    <path fill-rule="evenodd" class="path-circle"
-                          d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
-                </svg>
-            </a>
-            <a href="#location-info3" class="icon-location icon-location3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
-                    <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
-                          d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
-                    <path fill-rule="evenodd" class="path-circle"
-                          d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
-                </svg>
-            </a>
-            <a href="#location-info4" class="icon-location icon-location4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
-                    <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
-                          d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
-                    <path fill-rule="evenodd" class="path-circle"
-                          d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
-                </svg>
-            </a>
-            <a href="#location-info5" class="icon-location icon-location5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64">
-                    <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"
-                          d="M41.161 31.754l.103.155-.581.877a21.94 21.94 0 0 1-3.042 4.598L22 61.021 6.359 37.383a21.901 21.901 0 0 1-3.042-4.596l-.581-.878.103-.155A22.47 22.47 0 0 1 1 22.844C1 10.78 10.402 1 22 1s21 9.78 21 21.844c0 3.177-.667 6.187-1.839 8.91z"/>
-                    <path fill-rule="evenodd" class="path-circle"
-                          d="M22 11c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10z"/>
-                </svg>
-            </a>
         </div>
     </div>
 </section>
@@ -1041,42 +1446,42 @@
                     <div class="slide">
                         <div class="top-breeds__box">
                             <div class="photo"><img src="img/photo6.png" alt=""></div>
-                            <div class="name">Стрижка
-                                              йорков
-                            </div>
+                            <a href="#" class="name">Стрижка
+                                                     йорков
+                            </a>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="top-breeds__box">
                             <div class="photo"><img src="img/photo7.png" alt=""></div>
-                            <div class="name">Стрижка
-                                              Шпицов
-                            </div>
+                            <a href="#" class="name">Стрижка
+                                                     Шпицов
+                            </a>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="top-breeds__box">
                             <div class="photo"><img src="img/photo8.png" alt=""></div>
-                            <div class="name">Стрижка
-                                              Кошек
-                            </div>
+                            <a href="#" class="name">Стрижка
+                                                     Кошек
+                            </a>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="top-breeds__box">
                             <div class="photo"><img src="img/photo9.png" alt=""></div>
-                            <div class="name">Стрижка
-                                              мальтезе
-                            </div>
+                            <a href="#" class="name">Стрижка
+                                                     мальтезе
+                            </a>
                         </div>
                     </div>
 
                     <div class="slide">
                         <div class="top-breeds__box">
                             <div class="photo"><img src="img/photo6.png" alt=""></div>
-                            <div class="name">Стрижка
-                                              йорков
-                            </div>
+                            <a href="#" class="name">Стрижка
+                                                     йорков
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1300,7 +1705,7 @@
                 </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 d-sm-flex d-none">
                 <div class="copyright">Стрижка кошек и собак в Москве <a href="tel:+79995558877" class="phone">+7 999
                                                                                                                555 88
                                                                                                                77</a> <a
@@ -1588,58 +1993,58 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                       <div class="location-maps">
-                           <div class="maps">
-                               <img src="img/map.png" alt="" class="img-map">
+                        <div class="location-maps">
+                            <div class="maps">
+                                <img src="img/map.png" alt="" class="img-map">
 
-                               <a href="#location-info__modal1" class="icon-location icon-location1"></a>
-                               <a href="#location-info__modal2" class="icon-location icon-location2"></a>
-                               <a href="#location-info__modal3" class="icon-location icon-location3"></a>
-                               <a href="#location-info__modal4" class="icon-location icon-location4"></a>
-                           </div>
-                           <div class="location-info active" id="location-info__modal1">
-                               <h3>МИНИ Алтуфьево</h3>
+                                <a href="#location-info__modal1" class="icon-location icon-location1"></a>
+                                <a href="#location-info__modal2" class="icon-location icon-location2"></a>
+                                <a href="#location-info__modal3" class="icon-location icon-location3"></a>
+                                <a href="#location-info__modal4" class="icon-location icon-location4"></a>
+                            </div>
+                            <div class="location-info active" id="location-info__modal1">
+                                <h3>МИНИ Алтуфьево</h3>
 
-                               <div class="address">
-                                   <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                                       Алтуфьевское шоссе, <br>
-                                       72 ТЦ "Наш"</p>
-                                   <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Алтуфьево</p>
-                               </div>
-                           </div>
-                           <div class="location-info" id="location-info__modal2">
-                               <h3>МИНИ Кантемировская</h3>
+                                <div class="address">
+                                    <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                                        Алтуфьевское шоссе, <br>
+                                        72 ТЦ "Наш"</p>
+                                    <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Алтуфьево</p>
+                                </div>
+                            </div>
+                            <div class="location-info" id="location-info__modal2">
+                                <h3>МИНИ Кантемировская</h3>
 
-                               <div class="address">
-                                   <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                                       Кантемировская ул., 47 <br>
-                                       ТЦ Кантемировский</p>
-                                   <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Юбилейный</p>
-                               </div>
-                           </div>
-                           <div class="location-info" id="location-info__modal3">
-                               <h3>МИНИ на Ленинской</h3>
+                                <div class="address">
+                                    <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                                        Кантемировская ул., 47 <br>
+                                        ТЦ Кантемировский</p>
+                                    <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Юбилейный</p>
+                                </div>
+                            </div>
+                            <div class="location-info" id="location-info__modal3">
+                                <h3>МИНИ на Ленинской</h3>
 
-                               <div class="address">
-                                   <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                                       Ленинская,14 микрорайон <br>
-                                       Юбилейный</p>
-                                   <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-                               </div>
-                           </div>
-                           <div class="location-info" id="location-info__modal4">
-                               <h3>Груминг салон
-                                   MINI.PRO МАРЬИНО</h3>
+                                <div class="address">
+                                    <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                                        Ленинская,14 микрорайон <br>
+                                        Юбилейный</p>
+                                    <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+                                </div>
+                            </div>
+                            <div class="location-info" id="location-info__modal4">
+                                <h3>Груминг салон
+                                    MINI.PRO МАРЬИНО</h3>
 
-                               <div class="address">
-                                   <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                                       Новомарьинская улица, 12/12,
-                                       корпус 1 </p>
-                                   <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-                               </div>
+                                <div class="address">
+                                    <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                                        Новомарьинская улица, 12/12,
+                                        корпус 1 </p>
+                                    <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+                                </div>
 
-                           </div>
-                       </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

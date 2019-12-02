@@ -61,13 +61,35 @@ $(document).ready(function () {
     $('.top-breeds__slider').slick({
         slidesToShow: 4,
         prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>'
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false
+                }
+            }
+
+        ]
     });
 
     $('.dates-slider').owlCarousel({
         items: 5,
         center: true,
-        loop:true,
+        loop: true,
         nav: true,
         navText: [''],
         dots: false,
@@ -97,7 +119,13 @@ $(document).ready(function () {
         $(this).parents('.selected-positions').toggleClass('open').find('.selected-positions__dropdown').slideToggle();
     });
 
+    $('.btn-burger').click(function () {
+        $('.mobile-menu__wrapper').fadeToggle();
+    });
 
+    $('.btn-close-menu').click(function () {
+        $('.mobile-menu__wrapper').fadeOut();
+    });
 
 
 });
