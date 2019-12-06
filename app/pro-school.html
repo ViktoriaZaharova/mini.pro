@@ -27,7 +27,7 @@
 
 <body>
 
-<header>
+<header class="header-school">
     <div class="icon-mobile-wrapper">
         <a href="#" class="link">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24">
@@ -48,75 +48,79 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-12 header-content">
 
-            <div class="col-12 col-md-4 header-box__wrapper align-items-start justify-content-between d-none d-md-flex">
-                <div class="header-box">
-                    <div class="city-wrapper dropdown">
-                        <div class="dropdown-toggle city-active" data-toggle="dropdown" role="button"
-                             aria-haspopup="true" aria-expanded="false">
-                            <div class="icon"><img src="img/loc.svg" alt=""></div>
-                            <div class="text">Москва</div>
+                <div class="header-box__wrapper align-items-start d-none d-md-flex">
+                    <div class="header-box">
+                        <div class="city-wrapper dropdown">
+                            <div class="dropdown-toggle city-active" data-toggle="dropdown" role="button"
+                                 aria-haspopup="true" aria-expanded="false">
+                                <div class="icon"><img src="img/loc.svg" alt=""></div>
+                                <div class="text">Москва</div>
+                            </div>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Москва</a>
+                                <a class="dropdown-item" href="#">Королев</a>
+                                <a class="dropdown-item" href="#">Солнечногорск</a>
+                            </div>
                         </div>
 
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Москва</a>
-                            <a class="dropdown-item" href="#">Королев</a>
-                            <a class="dropdown-item" href="#">Солнечногорск</a>
-                        </div>
+                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+
+                        <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">
+                            ОНЛАЙН-ЗАПИСЬ
+                        </button>
                     </div>
 
-                    <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-
-                    <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">
-                        ОНЛАЙН-ЗАПИСЬ
-                    </button>
-                </div>
-
-                <nav class="navbar navbar-active__menu">
-                    <ul class="nav nav-menu">
-                        <li class="nav-item"><a href="#" class="nav-link active">Услуги </a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Салоны <span class="quantity">10</span> </a>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Акции </a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="col-12 col-md-4 header-logo">
-
-
-                <a href="index.html" class="logo">
-                    <span class="logo-icon"><img src="img/logo.png" alt=""></span>
-                    <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO
-Проект Алексея архипова</span>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-4 d-none d-md-flex">
-                <div class="header-box">
-                    <nav class="navbar navbar-main__menu">
-                        <ul class="nav menu">
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">О нас </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">О компании
-                                                                      MINI.PRO</a>
-                                    <a class="dropdown-item" href="#">Вакансии</a>
-                                    <a class="dropdown-item" href="#">Контакты</a>
-                                </div>
+                    <nav class="navbar navbar-active__menu">
+                        <ul class="nav nav-menu">
+                            <li class="nav-item"><a href="#" class="nav-link active">Услуги </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Салоны <span class="quantity">10</span>
+                            </a>
                             </li>
-                            <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Акции </a></li>
                         </ul>
                     </nav>
+                </div>
 
-                    <ul class="list-social">
-                        <li><a href="#"><img src="img/social/vk.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/social/youtube.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
-                    </ul>
+                <div class="header-logo">
+
+
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+                        <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO
+Проект Алексея архипова</span>
+                    </a>
+                </div>
+
+                <div class="d-none d-md-flex justify-content-end header-box__right">
+                    <div class="header-box">
+                        <nav class="navbar navbar-main__menu">
+                            <ul class="nav menu">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">О нас </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">О компании
+                                                                          MINI.PRO</a>
+                                        <a class="dropdown-item" href="#">Вакансии</a>
+                                        <a class="dropdown-item" href="#">Контакты</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Школа Груминга</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
+                            </ul>
+                        </nav>
+
+                        <ul class="list-social">
+                            <li><a href="#"><img src="img/social/vk.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/social/youtube.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,6 +159,7 @@
                             </div>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Школа Груминга</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
                     </ul>
                 </nav>

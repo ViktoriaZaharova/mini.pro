@@ -48,75 +48,79 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-12 header-content">
 
-            <div class="col-12 col-md-4 header-box__wrapper align-items-start justify-content-between d-none d-md-flex">
-                <div class="header-box">
-                    <div class="city-wrapper dropdown">
-                        <div class="dropdown-toggle city-active" data-toggle="dropdown" role="button"
-                             aria-haspopup="true" aria-expanded="false">
-                            <div class="icon"><img src="img/loc.svg" alt=""></div>
-                            <div class="text">Москва</div>
+                <div class="header-box__wrapper align-items-start d-none d-md-flex">
+                    <div class="header-box">
+                        <div class="city-wrapper dropdown">
+                            <div class="dropdown-toggle city-active" data-toggle="dropdown" role="button"
+                                 aria-haspopup="true" aria-expanded="false">
+                                <div class="icon"><img src="img/loc.svg" alt=""></div>
+                                <div class="text">Москва</div>
+                            </div>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Москва</a>
+                                <a class="dropdown-item" href="#">Королев</a>
+                                <a class="dropdown-item" href="#">Солнечногорск</a>
+                            </div>
                         </div>
 
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Москва</a>
-                            <a class="dropdown-item" href="#">Королев</a>
-                            <a class="dropdown-item" href="#">Солнечногорск</a>
-                        </div>
+                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+
+                        <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">
+                            ОНЛАЙН-ЗАПИСЬ
+                        </button>
                     </div>
 
-                    <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-
-                    <button type="button" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">
-                        ОНЛАЙН-ЗАПИСЬ
-                    </button>
-                </div>
-
-                <nav class="navbar navbar-active__menu">
-                    <ul class="nav nav-menu">
-                        <li class="nav-item"><a href="#" class="nav-link active">Услуги </a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Салоны <span class="quantity">10</span> </a>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Акции </a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="col-12 col-md-4 header-logo">
-
-
-                <a href="index.html" class="logo">
-                    <span class="logo-icon"><img src="img/logo.png" alt=""></span>
-                    <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO
-Проект Алексея архипова</span>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-4 d-none d-md-flex">
-                <div class="header-box">
-                    <nav class="navbar navbar-main__menu">
-                        <ul class="nav menu">
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">О нас </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">О компании
-                                                                      MINI.PRO</a>
-                                    <a class="dropdown-item" href="#">Вакансии</a>
-                                    <a class="dropdown-item" href="#">Контакты</a>
-                                </div>
+                    <nav class="navbar navbar-active__menu">
+                        <ul class="nav nav-menu">
+                            <li class="nav-item"><a href="#" class="nav-link active">Услуги </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Салоны <span class="quantity">10</span>
+                            </a>
                             </li>
-                            <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Акции </a></li>
                         </ul>
                     </nav>
+                </div>
 
-                    <ul class="list-social">
-                        <li><a href="#"><img src="img/social/vk.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/social/youtube.png" alt=""></a></li>
-                        <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
-                    </ul>
+                <div class="header-logo">
+
+
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><img src="img/logo.png" alt=""></span>
+                        <span class="logo-text">ГРУМИНГ САЛОНы MINI.PRO
+Проект Алексея архипова</span>
+                    </a>
+                </div>
+
+                <div class="d-none d-md-flex justify-content-end header-box__right">
+                    <div class="header-box">
+                        <nav class="navbar navbar-main__menu">
+                            <ul class="nav menu">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">О нас </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">О компании
+                                                                          MINI.PRO</a>
+                                        <a class="dropdown-item" href="#">Вакансии</a>
+                                        <a class="dropdown-item" href="#">Контакты</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Школа Груминга</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
+                            </ul>
+                        </nav>
+
+                        <ul class="list-social">
+                            <li><a href="#"><img src="img/social/vk.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/social/fb.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/social/youtube.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/social/inst.png" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,6 +159,7 @@
                             </div>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Бутик MINI.PRO</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Школа Груминга</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Франшиза</a></li>
                     </ul>
                 </nav>
@@ -176,7 +181,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Стрижка
+                <h1>Стрижка <br>
                     собак и кошек</h1>
 
                 <p>ЗАПИШИТЕСЬ</p>
@@ -1259,136 +1264,7 @@
             </svg>
         </a>
 
-        <div class="location-info active" id="location-info1">
-            <div class="btn-close">+</div>
 
-            <h3>Груминг салон
-                MINI.PRO МАРЬИНО</h3>
-
-            <div class="address">
-                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                    Новомарьинская улица, 12/12,
-                    корпус 1 </p>
-                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-            </div>
-
-            <a href="#" class="links">Подробнее о салоне</a>
-            <a href="#" class="links">Мастера в салоне</a>
-            <a href="#" class="links">Фото работ</a>
-
-            <div class="phone-wrap">
-                <p>Запишитесь: </p>
-                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-            </div>
-
-            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                ОНЛАЙН-ЗАПИСЬ В САЛОН
-            </button>
-        </div>
-        <div class="location-info" id="location-info2">
-            <div class="btn-close">+</div>
-
-            <h3>Груминг салон
-                MINI.PRO МАРЬИНО 2</h3>
-
-            <div class="address">
-                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                    Новомарьинская улица, 12/12,
-                    корпус 1 </p>
-                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-            </div>
-
-            <a href="#" class="links">Подробнее о салоне</a>
-            <a href="#" class="links">Мастера в салоне</a>
-            <a href="#" class="links">Фото работ</a>
-
-            <div class="phone-wrap">
-                <p>Запишитесь: </p>
-                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-            </div>
-
-            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                ОНЛАЙН-ЗАПИСЬ В САЛОН
-            </button>
-        </div>
-        <div class="location-info" id="location-info3">
-            <div class="btn-close">+</div>
-
-            <h3>Груминг салон
-                MINI.PRO МАРЬИНО 3</h3>
-
-            <div class="address">
-                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                    Новомарьинская улица, 12/12,
-                    корпус 1 </p>
-                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-            </div>
-
-            <a href="#" class="links">Подробнее о салоне</a>
-            <a href="#" class="links">Мастера в салоне</a>
-            <a href="#" class="links">Фото работ</a>
-
-            <div class="phone-wrap">
-                <p>Запишитесь: </p>
-                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-            </div>
-
-            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                ОНЛАЙН-ЗАПИСЬ В САЛОН
-            </button>
-        </div>
-        <div class="location-info" id="location-info4">
-            <div class="btn-close">+</div>
-
-            <h3>Груминг салон
-                MINI.PRO МАРЬИНО</h3>
-
-            <div class="address">
-                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                    Новомарьинская улица, 12/12,
-                    корпус 1 </p>
-                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-            </div>
-
-            <a href="#" class="links">Подробнее о салоне</a>
-            <a href="#" class="links">Мастера в салоне</a>
-            <a href="#" class="links">Фото работ</a>
-
-            <div class="phone-wrap">
-                <p>Запишитесь: </p>
-                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-            </div>
-
-            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                ОНЛАЙН-ЗАПИСЬ В САЛОН
-            </button>
-        </div>
-        <div class="location-info" id="location-info5">
-            <div class="btn-close">+</div>
-
-            <h3>Груминг салон
-                MINI.PRO МАРЬИНО</h3>
-
-            <div class="address">
-                <p><span class="icon"><img src="img/loc.svg" alt=""></span>
-                    Новомарьинская улица, 12/12,
-                    корпус 1 </p>
-                <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
-            </div>
-
-            <a href="#" class="links">Подробнее о салоне</a>
-            <a href="#" class="links">Мастера в салоне</a>
-            <a href="#" class="links">Фото работ</a>
-
-            <div class="phone-wrap">
-                <p>Запишитесь: </p>
-                <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
-            </div>
-
-            <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
-                ОНЛАЙН-ЗАПИСЬ В САЛОН
-            </button>
-        </div>
     </div>
 
 
@@ -1397,12 +1273,141 @@
             <div class="col-12">
                 <div class="box-title">
                     <h2>Адреса</h2>
-                    <p>Выберите
+                    <p>Выберите <br>
                        груминг салон MINI.PRO
                        рядом с домом</p>
                 </div>
 
+                <div class="location-info active" id="location-info1">
+                    <div class="btn-close">+</div>
 
+                    <h3>Груминг салон
+                        MINI.PRO МАРЬИНО</h3>
+
+                    <div class="address">
+                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                            Новомарьинская улица, 12/12,
+                            корпус 1 </p>
+                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+                    </div>
+
+                    <a href="#" class="links">Подробнее о салоне</a>
+                    <a href="#" class="links">Мастера в салоне</a>
+                    <a href="#" class="links">Фото работ</a>
+
+                    <div class="phone-wrap">
+                        <p>Запишитесь: </p>
+                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+                    </div>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ В САЛОН
+                    </button>
+                </div>
+                <div class="location-info" id="location-info2">
+                    <div class="btn-close">+</div>
+
+                    <h3>Груминг салон
+                        MINI.PRO МАРЬИНО 2</h3>
+
+                    <div class="address">
+                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                            Новомарьинская улица, 12/12,
+                            корпус 1 </p>
+                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+                    </div>
+
+                    <a href="#" class="links">Подробнее о салоне</a>
+                    <a href="#" class="links">Мастера в салоне</a>
+                    <a href="#" class="links">Фото работ</a>
+
+                    <div class="phone-wrap">
+                        <p>Запишитесь: </p>
+                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+                    </div>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ В САЛОН
+                    </button>
+                </div>
+                <div class="location-info" id="location-info3">
+                    <div class="btn-close">+</div>
+
+                    <h3>Груминг салон
+                        MINI.PRO МАРЬИНО 3</h3>
+
+                    <div class="address">
+                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                            Новомарьинская улица, 12/12,
+                            корпус 1 </p>
+                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+                    </div>
+
+                    <a href="#" class="links">Подробнее о салоне</a>
+                    <a href="#" class="links">Мастера в салоне</a>
+                    <a href="#" class="links">Фото работ</a>
+
+                    <div class="phone-wrap">
+                        <p>Запишитесь: </p>
+                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+                    </div>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ В САЛОН
+                    </button>
+                </div>
+                <div class="location-info" id="location-info4">
+                    <div class="btn-close">+</div>
+
+                    <h3>Груминг салон
+                        MINI.PRO МАРЬИНО</h3>
+
+                    <div class="address">
+                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                            Новомарьинская улица, 12/12,
+                            корпус 1 </p>
+                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+                    </div>
+
+                    <a href="#" class="links">Подробнее о салоне</a>
+                    <a href="#" class="links">Мастера в салоне</a>
+                    <a href="#" class="links">Фото работ</a>
+
+                    <div class="phone-wrap">
+                        <p>Запишитесь: </p>
+                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+                    </div>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ В САЛОН
+                    </button>
+                </div>
+                <div class="location-info" id="location-info5">
+                    <div class="btn-close">+</div>
+
+                    <h3>Груминг салон
+                        MINI.PRO МАРЬИНО</h3>
+
+                    <div class="address">
+                        <p><span class="icon"><img src="img/loc.svg" alt=""></span>
+                            Новомарьинская улица, 12/12,
+                            корпус 1 </p>
+                        <p><span class="icon"><img src="img/metro.png" alt=""></span>Метро: Марьино</p>
+                    </div>
+
+                    <a href="#" class="links">Подробнее о салоне</a>
+                    <a href="#" class="links">Мастера в салоне</a>
+                    <a href="#" class="links">Фото работ</a>
+
+                    <div class="phone-wrap">
+                        <p>Запишитесь: </p>
+                        <a href="tel:+79995558877" class="phone">+7 999 555 88 77</a>
+                    </div>
+
+                    <button type="button" class="btn btn-black" data-toggle="modal" data-target="#modalCallback">
+                        ОНЛАЙН-ЗАПИСЬ В САЛОН
+                    </button>
+                </div>
             </div>
 
 
@@ -1525,7 +1530,7 @@
                     </ul>
 
                     <div class="and-box">
-                        <p>а также: <a href="#" class="links">ринговки</a>, <a href="#" class="links">костюмы</a>
+                        <p>а также: <a href="#" class="links">ринговки, костюмы</a> <br>
                            и многое другое...</p>
                     </div>
                 </div>
@@ -1670,7 +1675,7 @@
                 <div class="footer-box">
 
                     <ul class="footer-menu">
-                        <li><a href="#">Груминг салоны
+                        <li><a href="#">Груминг салоны <br>
                                         MINI.PRO</a></li>
                         <li><a href="#">Услуги</a></li>
                         <li><a href="#">Салоны</a></li>

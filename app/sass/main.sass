@@ -134,7 +134,7 @@ button, .btn-primary
 .btn-border
 	border: 2px solid #000000
 	color: #000000
-	padding: 11px 11px
+	padding: 11px 12px
 	&:hover
 		background: #1a1a1a
 		color: #fff
@@ -169,7 +169,7 @@ button, .btn-primary
 	align-items: center
 
 .pt-50
-	padding: 50px 0 0 0
+	padding: 46px 0 0 0
 
 h1
 	font-size: 60px
@@ -177,14 +177,18 @@ h1
 	text-align: center
 	font-family: $bold
 	max-width: 560px
-	margin: 0 auto 46px
+	margin: 0 auto 33px
 	width: 100%
+	line-height: 67px
+	letter-spacing: 2.38px
+
 
 h2
 	font-size: 40px
 	text-transform: uppercase
 	font-family: $medium
 	letter-spacing: 1.2px
+	line-height: 42px
 
 h3
 	letter-spacing: .6px
@@ -253,6 +257,7 @@ h3
 	border: none
 	padding: 0
 	margin: 15px 0 0 0
+
 	&:before
 		content: ''
 		position: absolute
@@ -261,6 +266,10 @@ h3
 		border-left: 17px solid transparent
 		border-right: 17px solid transparent
 		border-bottom: 17px solid #000
+
+.dropdown-menu.show
+	transform: translate3d(0, 0, 0) !important
+	top: 100% !important
 
 .dropdown-item
 	color: #ffffff
@@ -327,11 +336,26 @@ header
 	z-index: 5
 	padding: 40px 0 0
 	.phone
-		margin: 19px 0 20px
+		letter-spacing: 0.54px
+		margin: 19px 0 18px
+		line-height: 14px
 	.container
 		max-width: 1870px
 	.list-social
 		margin: 0 0 0 auto
+
+.header-box__wrapper
+	.header-box
+		margin: 0 86px 0 0
+
+.header-content
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	flex-wrap: wrap
+
+.header-logo
+	margin: 0 0 0 150px
 
 
 //navbar
@@ -342,6 +366,7 @@ header
 	font-size: 14px
 	padding: 0
 	font-family: $medium
+	line-height: 14px
 
 .nav-link.dropdown-toggle
 	padding: 0 17px 0 0
@@ -386,7 +411,7 @@ header
 		&:before
 			background: #000
 	.nav-item
-		margin: 0 0 24px
+		margin: 0 0 25px
 		&:last-child
 			margin: 0
 
@@ -395,7 +420,7 @@ header
 	display: flex
 	align-items: center
 	flex-wrap: wrap
-	margin: 0 0 26px
+	margin: 0 0 22px
 
 .menu
 	width: 100%
@@ -404,7 +429,7 @@ header
 	flex-wrap: wrap
 	justify-content: flex-end
 	.nav-item
-		margin: 0 40px 0 0
+		margin: 0 45px 0 0
 		&:last-child
 			margin: 0
 
@@ -414,7 +439,13 @@ header
 	align-items: center
 
 .logo-icon
-	width: 65px
+	width: 70px
+	height: 70px
+	display: flex
+	align-items: center
+	justify-content: center
+	background: #000
+	border-radius: 50%
 
 .logo-text
 	text-align: center
@@ -424,9 +455,11 @@ header
 	font-size: 14px
 	font-family: $bold
 	margin: 15px auto 0
-	max-width: 225px
+	max-width: 228px
 	width: 100%
 	text-transform: uppercase
+	line-height: 14px
+	letter-spacing: 0.42px
 
 .list-social
 	display: flex
@@ -451,37 +484,48 @@ header
 .main-home
 	background: url("../img/bg1.png") no-repeat center
 		size: cover
-	padding: 450px 0 515px
+	padding: 435px 0 525px
 	p
 		font-size: 20px
 		text-transform: uppercase
-		margin: 0 auto 19px
+		margin: 0 auto 11px
 		letter-spacing: 0.6px
 		font-family: $bold
 		text-align: center
 	.button-group
 		justify-content: center
 		.btn
-			margin: 0 5px
+			width: 174px
+			&:last-child
+				margin: 0 0 0 10px
+				padding: 0 11px
+	h1
+		height: 117px
+		margin: 0 auto 47px
 
 
 //services
 .banner-box
 	background-color: #f1f1f1
-	padding: 30px 34px 25px
+	padding: 26px 34px 25px
 	width: 278px
-	margin: 52px 0 0 0
+	margin: 45px 0 0 0
 	p
 		font-size: 14px
 		letter-spacing: 0.42px
 		max-width: 131px
+		line-height: 16px
 		width: 100%
 		margin: 0 auto
 		&:last-child
 			margin: 19px auto 0
+	h3
+		line-height: 24px
+		text-align: center
+		letter-spacing: 0
 
 .services-price
-	padding: 0 0 0 90px
+	padding: 15px 0 0 97px
 	width: calc(100% - 278px)
 
 .services-wrapper
@@ -492,7 +536,7 @@ header
 
 .price-icon
 	position: relative
-	margin: 31px auto 20px
+	margin: 31px auto 32px
 	width: 113px
 	span
 		color: #000000
@@ -508,11 +552,18 @@ header
 		left: 13px
 		transform: rotate(-45deg)
 
-.table-head, .table-line
+.table-head
 	width: 100%
 	display: flex
 	align-items: center
 	flex-wrap: wrap
+
+.table-line
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
 
 .name-services
 	text-transform: uppercase
@@ -528,12 +579,12 @@ header
 .price-table
 	font-size: 16px
 	.table-head
-		margin: 0 0 45px
+		margin: 0 0 37px
 		.name-services
 			text-transform: none
 			text-decoration: none
 	.name-services
-		width: 275px
+		width: 270px
 	.weight
 		display: flex
 		align-items: center
@@ -589,6 +640,8 @@ header
 		input
 			border-bottom: 1px solid #000
 			color: rgba(#000,.6)
+			letter-spacing: 0.42px
+			line-height: 16px
 			&::placeholder
 				color: rgba(#000,.6)
 
@@ -599,8 +652,9 @@ header
 	margin: 0 0 50px
 	max-width: 525px
 	h4
-		margin: 0 10px 0 0
+		margin: 0 17px 0 0
 		white-space: nowrap
+		letter-spacing: 0.42px
 
 .search-city
 	h4
@@ -617,7 +671,7 @@ header
 	align-items: flex-start
 	justify-content: space-between
 	flex-wrap: wrap
-	margin: 10px 0 0 0
+	margin: 14px 0 0 0
 	li
 		.dropdown-toggle
 			background: #000
@@ -674,6 +728,10 @@ header
 	top: 50%
 
 .form-result
+	position: absolute
+	right: 0
+	top: calc(100% - 40px)
+	z-index: 3
 	display: none
 	width: 100%
 	background: #000
@@ -690,9 +748,9 @@ header
 
 //lookbook
 .lookbook
-	margin: 49px 0 0 0
+	margin: 41px 0 0 0
 	background-color: #1b1b1b
-	padding: 49px 0 0 0
+	padding: 45px 0 0 0
 	color: #fff
 	.button-group
 		flex-direction: column
@@ -716,7 +774,7 @@ header
 					border-top-color: #1b1b1b
 
 	.form-search__wrapper
-		margin: 0 0 35px
+		margin: 5px 0 35px
 	.dropdown-menu
 		background-color: #f1f1f1
 		.dropdown-item
@@ -730,13 +788,14 @@ header
 
 
 .box-title
-	margin: 0 0 96px
+	margin: 0 0 90px
 	max-width: 240px
 	width: 100%
 	p
 		font-size: 20px
 		letter-spacing: 0.6px
-		margin: 29px 0 0 0
+		margin: 13px 0 0 0
+		line-height: 27px
 
 
 .sing-up
@@ -745,13 +804,14 @@ header
 		letter-spacing: 0.6px
 		font-size: 20px
 		font-family: $bold
-		margin: 0 0 20px
+		margin: 0 0 12px
 
 //lookbook-slider
 .lookbook-slider
 	width: 357px
 	overflow: hidden
 	position: relative
+	margin: 0 2px 2px 0
 	.slick-dots
 		position: absolute
 		bottom: auto
@@ -837,10 +897,10 @@ header
 	flex-wrap: wrap
 	justify-content: flex-start
 	align-items: flex-start
-	min-width: 1076px
+	min-width: 1077px
 
 .lookbook-content
-	padding: 0 0 0 90px
+	padding: 0 0 0 97px
 	width: calc(100% - 278px)
 
 
@@ -892,7 +952,7 @@ header
 	padding: 58px 0 0
 
 	.list-social
-		margin: 43px 0 0 0
+		margin: 35px 0 0 0
 		li
 			margin: 0 10px 0 0
 			&:last-child
@@ -914,13 +974,15 @@ header
 					img
 						filter: invert(1)
 	.img-phone
-		margin: 0 0 -144px
+		margin: 0 0px -144px -24px
+	h2
+		margin: 88px 0 0 0
 
 
 //top-breeds
 .top-breeds
 	background-color: #1b1b1b
-	padding: 49px 0 56px
+	padding: 45px 0 47px
 	color: #fff
 	border-top: 2px solid #000
 	.links
@@ -929,7 +991,7 @@ header
 		letter-spacing: 0.6px
 		display: flex
 		align-items: center
-		margin: 24px 0 0 0
+		margin: 12px 0 0 0
 		.text
 			text-decoration: underline
 			margin: 0 8px 0 0
@@ -938,8 +1000,11 @@ header
 
 .top-breeds__slider
 	width: 100%
-	max-width: 800px
+	max-width: 794px
 	padding: 16px 30px 0
+	margin: 0 -56px 0 0
+	.slick-next, .slick-prev
+		top: 36%
 
 .top-breeds__wrapper
 	display: flex
@@ -978,7 +1043,7 @@ header
 
 //cosmetics
 .cosmetics
-	padding: 51px 0 47px
+	padding: 45px 0 43px
 
 .cosmetics-box__min, .stages-school__box
 	width: 100%
@@ -992,7 +1057,7 @@ header
 
 .cosmetics-box__max, .stages-school__list, .franchise-choice
 	width: 100%
-	max-width: 741px
+	max-width: 735px
 	.image
 		margin: 59px 0 33px
 		width: 100%
@@ -1013,7 +1078,11 @@ header
 	align-items: center
 	margin: 0 0 52px
 	.icon
-		width: 77px
+		width: 80px
+		height: 80px
+		display: flex
+		align-items: center
+		justify-content: center
 		margin: 0 21px 0 0
 	.text
 
@@ -1021,10 +1090,12 @@ header
 		font-family: $bold
 		letter-spacing: 0.6px
 		text-transform: uppercase
+		line-height: 28px
 
 .and-box
 	margin: auto 0 0 0
 	font-size: 20px
+	line-height: 35px
 	a
 		display: inline-block
 		text-decoration: underline
@@ -1046,7 +1117,7 @@ header
 			display: inline
 			font-size: 20px
 			position: relative
-
+			line-height: 20px
 			font-family: $medium
 			&:before
 				content: ''
@@ -1080,15 +1151,22 @@ header
 	align-items: flex-start
 	.text
 		width: 100%
-		max-width: 123px
+		max-width: 140px
 		letter-spacing: 0.48px
-		line-height: 20px
+		line-height: 22px
 		font-family: $medium
-		margin: 0 0 0 9px
+		margin: 0 0 0 17px
+	.icon
+		width: 20px
+		min-width: 20px
+	&:last-child
+		.icon
+			width: 27px
+			min-width: 27px
 
 //record-service
 .record-service
-	padding: 51px 0 50px
+	padding: 47px 0 49px
 	background-color: #efefef
 	text-align: center
 	margin: 0 0 2px
@@ -1096,12 +1174,12 @@ header
 		font-family: $default
 		letter-spacing: 1.41px
 		text-transform: none
-		margin: 0 auto 14px
+		margin: 0 auto 2px
 	.phone
 		text-align: center
 		font-size: 32px
 		font-family: $medium
-		margin: 0 auto 48px
+		margin: 0 auto 38px
 	button
 		margin: 0 auto
 		width: 200px
@@ -1130,6 +1208,7 @@ header
 	flex-wrap: wrap
 	margin: 23px 0 0 0
 	p
+		line-height: 20px
 		position: relative
 		font-size: 20px
 		font-family: $medium
@@ -1149,7 +1228,7 @@ header
 
 //franchise
 .franchise
-	padding: 51px 0 53px
+	padding: 51px 0
 	background-color: #f1f1f1
 
 .franchise-content
@@ -1195,6 +1274,8 @@ header
 		margin: 0 0 15px
 	a
 		color: #000
+		line-height: 23px
+		padding: 0 50px
 
 
 //footer
@@ -1205,21 +1286,23 @@ footer
 		align-items: flex-start
 	.logo-icon
 		width: 51px
+		height: 51px
 	.logo-text
 		text-align: left
 		max-width: 87px
 		margin: 30px 0 18px
+		line-height: 16px
 	.logo-desc
 		text-transform: uppercase
 		max-width: 87px
 		font-family: $bold
 	.btn
-		margin: 29px 0 0 0
+		margin: 25px 0 0 0
 
 .copyright
 	font-size: 12px
 	color: #1b1b1b
-	margin: 72px 0 0 0
+	margin: 62px 0 0 0
 	font-family: $medium
 	a
 		color: #1b1b1b
@@ -1233,13 +1316,14 @@ footer
 
 .footer-menu
 	li
-		margin: 0 0 20px
+		margin: 0 0 19px
 		&:last-child
 			margin: 0
 		a
 			font-size: 14px
 			font-family: $medium
 			letter-spacing: 0.42px
+			line-height: 15px
 			&:hover
 				text-decoration: underline
 
@@ -1249,14 +1333,14 @@ footer
 
 	.box-title
 		margin: 0
-		max-width: 254px
+		max-width: 260px
 		p
-			margin: 23px 0 0 0
+			margin: 12px 0 0 -3px
 			font-size: 20px
 	.container
 		min-height: 500px
 		position: relative
-		padding: 47px 0 63px
+		padding: 43px 11px 63px
 
 .maps
 	position: absolute
@@ -1280,9 +1364,9 @@ footer
 	border: 1px solid #e5e5e5
 	background-color: #ffffff
 	position: absolute
-	top: 54px
-	right: 25px
-	padding: 20px 22px 30px
+	top: 28px
+	right: 76px
+	padding: 17px 22px 30px
 	display: none
 	.btn-close
 		display: flex
@@ -1294,8 +1378,8 @@ footer
 			radius: 50%
 		background-color: #ffffff
 		position: absolute
-		right: -20px
-		top: -20px
+		right: -18px
+		top: -21px
 		cursor: pointer
 		transition: .3s ease
 		transform: rotate(45deg)
@@ -1305,9 +1389,11 @@ footer
 			background-color: #000000
 			color: #fff
 	h3
+		letter-spacing: 0.42px
+		line-height: 16px
 		text-transform: none
 		font-size: 14px
-		margin: 0 0 18px
+		margin: 0 0 9px
 		max-width: 155px
 		font-family: $medium
 
@@ -1322,12 +1408,15 @@ footer
 		display: flex
 		align-items: center
 		justify-content: center
+		margin: 26px 0 0 0
 		.phone
 			font-size: 14px
 			font-family: $default
 			margin: 0 0 0 5px
 	button
-		margin: 10px auto 0
+		margin: 8px auto 0
+		width: 240px
+		letter-spacing: 0.42px
 
 .hashtag-list .dropdown-menu.dropdown-menu-right
 	border-radius: 5px 0 5px 5px
@@ -1337,11 +1426,12 @@ footer
 	background: #000
 
 .address
-	margin: 0 0 25px
+	margin: 0 0 35px
 	p
 		display: flex
 		align-items: center
 		margin: 0 0 18px
+		line-height: 18px
 		&:last-child
 			margin: 0
 		.icon
@@ -1371,23 +1461,23 @@ footer
 
 .icon-location1
 	top: 220px
-	left: -396px
+	left: 279px
 
 .icon-location2
-	bottom: 84px
-	left: 124px
+	bottom: 79px
+	left: 843px
 
 .icon-location3
 	top: 142px
-	left: 446px
+	left: 1164px
 
 .icon-location4
-	right: -152px
+	right: 524px
 	top: 128px
 
 .icon-location5
-	right: -352px
-	bottom: 73px
+	right: 324px
+	bottom: 70px
 
 //modal
 .modal-callback
@@ -1429,8 +1519,9 @@ footer
 		.logo-section
 			margin: 0
 			.icon
-				width: 37px
-				margin: 0 11px 0 0
+				width: 40px
+				height: 40px
+				margin: 0 9px 0 0
 			.text
 				font-size: 14px
 				letter-spacing: 0.42px
@@ -1459,7 +1550,11 @@ footer
 		height: auto
 		width: 100%
 		padding: 20px 21px 19px 38px
-
+		position: relative
+		right: 0
+		top: 0
+		left: 0
+		bottom: 0
 		border: none
 			radius: 0
 		flex-direction: column
@@ -1518,6 +1613,12 @@ footer
 			border-bottom: 1px solid #000
 			&:hover
 				color: #000000
+
+#modalCallback
+	.modal-body
+		padding: 0 25px 0 39px
+	.modal-dialog .modal-header
+		padding: 20px 21px 46px
 
 .form-step2
 	label
@@ -1807,6 +1908,10 @@ footer
 		padding: 8px 8px 7px 5px
 		img
 			width: 23px
+		&:hover
+			background: #000
+			img
+				filter: invert(1)
 	.services-box__line
 		margin: 17px 0 -10px 0
 		.price-wrapper
@@ -1925,6 +2030,11 @@ footer
 	justify-content: center
 	font-family: $medium
 	margin: 0 0 5px
+	transition: .3s ease
+	cursor: pointer
+	&:hover
+		background: #000
+		color: #fff
 
 .time-record__item.active
 	background: #000
@@ -1992,12 +2102,15 @@ footer
 //.main-salon
 .header
 	position: relative
-	margin: 0 0 98px
+	margin: 0 0 99px
 
 .main-salon
 	background: #fff
 	h1
 		max-width: none
+		margin: 0 auto 30px
+	.container
+		padding: 0
 
 .info-salon
 	display: flex
@@ -2036,12 +2149,12 @@ footer
 		font-size: 16px
 
 .maps-section
-	margin: 50px 0
+	margin: 50px 0 0
 	position: relative
 	width: 100%
 	height: 503px
 	.icon-location
-		top: 50%
+		top: 46%
 		left: 50%
 		transform: translate(-50%,-50%)
 
@@ -2064,7 +2177,7 @@ footer
 			.weight
 				display: none
 		.table-head
-			padding: 19px 0
+			padding: 17px 0 12px
 			margin: 0
 			border:
 				top: 1px solid #dadada
@@ -2075,7 +2188,7 @@ footer
 		.weight-one, .price-it__one
 			width: 165px
 		.weight-two, .price-it__two
-			width: 130px
+			width: 134px
 		.weight-three, .price-it__three
 			width: 145px
 		.weight-four, .price-it__four
@@ -2084,8 +2197,9 @@ footer
 			width: auto
 		.price-it
 			padding: 0
+			line-height: 21px
 		.table-line
-			padding: 19px 0
+			padding: 17px 0
 			margin: 0
 			&:nth-child(odd)
 				background-color: #f8f8f8
@@ -2099,7 +2213,7 @@ footer
 
 .table-head__wrap, .table-line__wrapper
 	display: flex
-	align-items: center
+	align-items: flex-start
 	flex-wrap: wrap
 
 //groomers
@@ -2144,14 +2258,18 @@ footer
 //salon-city
 .salon-city
 	h1
-		margin: 0 0 100px
+		margin: 0 0 99px
+		height: 45px
+		line-height: 53px
 
 .all-salon
-	padding: 50px 0
+	padding: 59px 0 40px
+	h2
+		padding: 0 10px
 
 .all-salon__content
 	width: 100%
-	margin: 49px 0 0 0
+	margin: 40px 0 0 0
 	display: flex
 	flex-wrap: wrap
 	justify-content: flex-start
@@ -2174,9 +2292,10 @@ footer
 	justify-content: space-between
 	margin: 0 0 15px
 	h4
-		max-width: 196px
+		//max-width: 196px
 		font-family: $medium
 		font-size: 26px
+		line-height: 30px
 	.icon
 		width: 9px
 	&:hover
@@ -2187,6 +2306,9 @@ footer
 .main-pro__school
 	background: url("../img/bg2.png") no-repeat center
 		size: cover
+	padding: 446px 0 590px
+	h1
+		max-width: 485px
 
 .about-school
 	padding: 50px 0
@@ -2253,13 +2375,13 @@ footer
 
 .learning-stage__box
 	width: 100%
-	max-width: 730px
+	max-width: 735px
 	display: flex
 	align-items: flex-start
 	flex-wrap: wrap
 	h3
 		width: 100%
-		margin: 0 0 49px
+		margin: 0 0 38px
 	.text-left
 		width: 100%
 		max-width: 316px
@@ -2270,22 +2392,23 @@ footer
 			&:last-child
 				margin: 0
 	.text-right
-		margin: 0 0 0 auto
+		margin: 0 0 0 86px
 		display: flex
 		flex-direction: column
 		align-items: flex-start
 		text-align: left
 		justify-content: flex-start
 		width: 100%
-		max-width: 190px
+		max-width: 220px
 		.btn
 			width: 190px
 		h3
 			text-align: left
-			margin: 0 0 23px
+			margin: 0 0 17px
 		.links
 			text-decoration: underline
 			margin: 20px 0 0 0
+			letter-spacing: 0.48px
 			&:hover
 				text-decoration: none
 	h4
@@ -2313,12 +2436,16 @@ footer
 //main-payment
 .main-payment
 	padding: 0 0 101px
+	.container
+		padding: 0 15px
 	form
 		max-width: 320px
 		width: 100%
 		margin: 0 auto
 	h1
-		margin: 0 0 90px
+		margin: 0 0 99px
+		line-height: 53px
+		height: 45px
 	.label
 		max-width: 282px
 	.checkbox
@@ -2341,6 +2468,8 @@ footer
 		margin: 0 auto
 		h4
 			font-family: $medium
+	.form-result
+		margin: 40px 0 0 0
 
 	.groomers-content
 		margin: 100px 0 49px
@@ -2353,7 +2482,9 @@ footer
 	border-bottom: 1px solid #dadada
 	h1
 		max-width: none
-		margin: 0 0 90px
+		line-height: 53px
+		height: 45px
+		margin: 0 0 99px
 	.banner-box
 		margin: 0
 		width: 282px
@@ -2466,6 +2597,7 @@ footer
 	align-items: flex-start
 	flex-wrap: wrap
 	justify-content: flex-start
+	min-width: 1076px
 
 
 .examples-work__box-link
@@ -2728,7 +2860,9 @@ footer
 //haircut-city
 .haircut-city
 	h1
-		margin: 0 0 90px
+		margin: 0 0 99px
+		line-height: 74px
+		height: 129px
 
 .m-0
 	margin: 0
@@ -2772,6 +2906,7 @@ footer
 		h2
 			font-size: 20px
 			font-family: $bold
+			line-height: 24px
 
 .one-haircut__content
 	display: flex
@@ -2829,7 +2964,7 @@ footer
 		align-items: center
 		justify-content: center
 		position: relative
-		width: 33.2%
+		width: 398px
 		height: 398px
 		overflow: hidden
 		margin: 0 0 2px
@@ -2936,10 +3071,10 @@ footer
 	left: 0
 	top: 0
 	display: none
-	height: 100vh
+	height: 560px
 	z-index: 3
 	background: #fff
-	width: 320px
+	width: 100%
 
 .mobile-menu
 	height: 100%
@@ -2956,10 +3091,10 @@ footer
 	cursor: pointer
 
 .mobile-menu__top
-	padding: 66px 41px 28px
+	padding: 66px 41px 8px
 	border-bottom: 1px solid #dadada
 	.navbar-active__menu .nav-item
-		margin: 0 0 17px
+		margin: 0 0 19px
 	.navbar-active__menu .nav-link
 		padding: 0
 		font-size: 14px
@@ -2969,14 +3104,14 @@ footer
 
 .mobile-menu__center
 	border-bottom: 1px solid #dadada
-	padding: 29px 36px 27px
+	padding: 29px 36px 26px
 	.navbar-main__menu
 		margin: 0
 	.menu
 		flex-direction: column
 		align-items: flex-start
 		li
-			margin: 0 0 17px
+			margin: 0 0 18px
 			display: flex
 			flex-direction: column
 			align-items: flex-start
@@ -2988,18 +3123,18 @@ footer
 			position: relative
 			background: transparent
 			padding: 12px 0 0 18px
-			margin: 0
+			margin: 0 0 5px
 			&:before
 				display: none
 			.dropdown-item
 				color: #000
 				padding: 0
-				margin: 0 0 9px
+				margin: 0 0 16px
 				&:last-child
 					margin: 0
 
 .mobile-menu__bottom
-	padding: 23px 0 34px
+	padding: 19px 0 34px
 	.list-social
 		justify-content: center
 
