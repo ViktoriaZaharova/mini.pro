@@ -176,8 +176,8 @@
   .price-table .table-line .price-it__three
     width: 100px
 
-  .nav-link
-    font-size: 12px
+  .header-box__wrapper .header-box
+    margin: 0 20px 0 0
 
   .info-salon__box
     margin: 0 0 9px
@@ -223,14 +223,15 @@
   .salon-city h1, .practical-work h1, .main-payment h1
     height: 99px
 
+  .cosmetics-page h1, .main-salon h1
+    height: auto
+    line-height: normal
+
 @media only screen and (max-width: 1100px)
   header .container
     padding: 0 15px
 
 @media only screen and (max-width: 1030px)
-  .header-box__wrapper .header-box
-    margin: 0 40px 0 0
-
   .header-box__right
     margin: 0
 
@@ -325,7 +326,9 @@
     margin: 37px auto 29px
 
   .menu .nav-item
-    margin: 0 15px 0 0
+    margin: 0 15px 5px 0
+    &:last-child
+      margin: 0 0 5px
 
   header
     .btn-border
@@ -338,7 +341,6 @@
     justify-content: space-around
 
   .services-price__section
-    //padding: 0
     .form-search__wrapper
       max-width: none
 
@@ -439,13 +441,21 @@
   .haircut-city h1
     height: 200px
 
+  .header-box__right
+    max-width: 300px
+
 
 @media only screen and (max-width: 880px)
   .header-box__wrapper .header-box
     margin: 0 20px 0 0
 
-  .menu .nav-item, .header-school .menu .nav-item
+  .header-school .menu .nav-item
     margin: 0 10px 0 0
+
+  .menu .nav-item
+    margin: 0 10px 5px 0
+    &:last-child
+      margin: 0 10px 5px 0
 
   header
     .logo-text
@@ -455,10 +465,6 @@
 
   .gallery-wrapper .img-it
     width: 315px
-
-@media only screen and (max-width: 830px)
-  .nav-link
-    font-size: 11px
 
 @media only screen and (max-width: 767px)
   footer .logo
@@ -1273,6 +1279,10 @@
 
   .salon-city h1
     margin: 0 auto 47px
+
+  .main-masters
+    .container
+      padding: 0 15px
 
 @media only screen and (max-width: 406px)
   .hashtag-item
