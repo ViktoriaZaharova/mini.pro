@@ -340,7 +340,8 @@ header
 		margin: 19px 0 18px
 		line-height: 14px
 	.container
-		max-width: 1870px
+		max-width: 1890px
+		padding: 0 40px
 	.list-social
 		margin: 0 0 0 auto
 
@@ -2597,7 +2598,7 @@ footer
 	align-items: flex-start
 	flex-wrap: wrap
 	justify-content: flex-start
-	min-width: 1076px
+	min-width: 1077px
 
 
 .examples-work__box-link
@@ -2638,6 +2639,11 @@ footer
 	display: flex
 	align-items: center
 	justify-content: center
+	margin: 0 2px 2px 0
+	&:last-child
+		margin: 0
+	&:nth-child(3)
+		margin: 0 2px 0 0
 	&:before
 		content: ''
 		position: absolute
@@ -2668,19 +2674,31 @@ footer
 		border-radius: 50%
 		padding: 0
 		&:before
-			content: '+'
+			content: ''
 			position: absolute
-			top: 54%
-			left: 51%
+			top: 50%
+			left: 50%
 			transform: translate(-50%,-50%)
-			font-size: 30px
 			font-family: $default
-			color: #000
+			background: #000
 			letter-spacing: 0.9px
+			width: 15px
+			height: 2px
+			transition: .3s ease
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			background: #000
+			width: 2px
+			height: 15px
+			transition: .3s ease
 		&:hover
 			background: #000
-			&:before
-				color: #fff
+			&:before, &:after
+				background: #fff
 
 
 .btn-play
