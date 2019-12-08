@@ -354,9 +354,14 @@ header
 	align-items: flex-start
 	justify-content: space-between
 	flex-wrap: wrap
+	position: relative
 
 .header-logo
-	margin: 0 0 0 150px
+	//margin: 0 0 0 150px
+	position: absolute
+	left: 50%
+	top: 0
+	transform: translate(-50%,0)
 
 
 //navbar
@@ -2109,7 +2114,7 @@ footer
 	background: #fff
 	h1
 		max-width: none
-		margin: 0 auto 30px
+		margin: 0 auto 49px
 		line-height: 45px
 		height: 45px
 	.container
