@@ -127,6 +127,12 @@
   .header-box__wrapper .header-box
     margin: 0 115px 0 0
 
+@media only screen and (max-width: 1230px)
+  .gallery-wrapper
+    .img-it
+      &:nth-last-child(-n+3)
+        margin: 0 2px 2px 0
+
 @media only screen and (max-width: 1199px)
   .franchise-box
     width: 280px
@@ -216,9 +222,6 @@
 
   .lookbook-content
     padding: 0
-
-  .gallery-wrapper
-    justify-content: space-around
 
   .salon-city h1, .practical-work h1, .main-payment h1
     height: 99px
@@ -1130,6 +1133,7 @@
     .img-it
       width: 316px
       display: none
+      margin: 0 0 1px
       &:nth-last-child(-n+4)
         display: flex
       &:nth-last-child(-n+3)
